@@ -1,0 +1,35 @@
+<section class="wrap">
+  <div class="container">
+    <div class="head">
+      <h2>{{ 'projects.title' | t }}</h2>
+      <p>{{ 'projects.subtitle' | t }}</p>
+    </div>
+
+    <div class="grid">
+      <article class="card" *ngFor="let p of projects" [class.highlight]="p.highlight">
+        <div class="card-head">
+          <h3>{{ p.titleKey | t }}</h3>
+          <span class="badge" *ngIf="p.highlight">{{ 'projects.badge.featured' | t }}</span>
+        </div>
+
+        <p class="desc">{{ p.descKey | t }}</p>
+
+        <ul class="tech">
+          <li *ngFor="let tech of p.tech">{{ tech }}</li>
+        </ul>
+
+        <div class="actions">
+          <a
+            class="btn primary"
+            *ngFor="let l of p.links"
+            [href]="l.url"
+            [attr.target]="l.external ? '_blank' : null"
+            [attr.rel]="l.external ? 'noopener' : null"
+          >
+            {{ l.labelKey | t }}
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

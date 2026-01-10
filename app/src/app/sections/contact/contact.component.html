@@ -1,0 +1,40 @@
+<section class="wrap">
+  <div class="container grid">
+    <div class="copy">
+      <h2>{{ 'contact.title' | t }}</h2>
+      <p>{{ 'contact.text' | t }}</p>
+
+      <div class="actions">
+        <a class="btn primary" [href]="'mailto:' + email">
+          {{ 'contact.actions.write' | t }}
+        </a>
+
+        <button type="button" class="btn ghost" (click)="copyEmail()">
+          {{ 'contact.actions.copy' | t }}
+        </button>
+
+        <span class="toast" *ngIf="copied" aria-live="polite">
+          {{ 'contact.toast.copied' | t }}
+        </span>
+      </div>
+
+      <div class="links">
+        <a class="link" href="https://github.com/SteGi78" target="_blank" rel="noopener noreferrer">
+          {{ 'contact.links.github' | t }}
+        </a>
+        <a class="link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          {{ 'contact.links.linkedin' | t }}
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>{{ 'contact.card.title' | t }}</h3>
+      <ul>
+        <li><span class="dot"></span> {{ 'contact.card.items.location' | t }}</li>
+        <li><span class="dot"></span> {{ 'contact.card.items.focus' | t }}</li>
+        <li><span class="dot"></span> {{ 'contact.card.items.projects' | t }}</li>
+      </ul>
+    </div>
+  </div>
+</section>

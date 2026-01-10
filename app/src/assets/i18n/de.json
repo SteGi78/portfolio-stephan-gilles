@@ -1,0 +1,189 @@
+{
+  "hero": {
+    "eyebrow": "Frontend / Full-Stack (in Ausbildung)",
+    "title": {
+      "before": "Hi, ich bin ",
+      "name": "Stephan Gilles",
+      "after": " – ich baue moderne Web-Apps mit Angular, TypeScript & JavaScript."
+    },
+    "subtitle": "Fokus: saubere UI, klare Struktur, zuverlässige Funktionen. Aktuell im Teamprojekt (Join) und auf dem Weg zum Full-Stack.",
+    "cta": {
+      "projects": "Projekte ansehen",
+      "contact": "Kontakt"
+    },
+    "highlights": {
+      "angular": "Angular (Standalone, Routing)",
+      "responsive": "HTML / SCSS / Responsive",
+      "git": "Git / GitHub Arbeitsablauf"
+    },
+    "meta": {
+      "location": {
+        "label": "Standort",
+        "value": "Aachen"
+      },
+      "stack": {
+        "label": "Stack",
+        "value": "Angular · TS · JS · SCSS"
+      },
+      "status": {
+        "label": "Status",
+        "value": "offen für Junior-Positionen"
+      }
+    }
+  },
+  "skills": {
+    "title": "Fähigkeiten",
+    "subtitle": "Solide Grundlagen, sauber umgesetzt – mit Fokus auf Wartbarkeit.",
+    "frontend": "Frontend",
+    "tools": "Tools",
+    "workflow": "Arbeitsweise",
+    "items": {
+      "angular": "Angular (Standalone, Routing)",
+      "ts": "TypeScript",
+      "js": "JavaScript (ES6+)",
+      "html": "HTML5",
+      "scss": "SCSS/CSS",
+      "responsive": "Responsive Design",
+      "git": "Git / GitHub",
+      "vscode": "VS Code",
+      "devtools": "Chrome DevTools",
+      "npm": "npm",
+      "rest": "REST Basics",
+      "clean": "Sauberer Code",
+      "components": "Komponenten-Denken",
+      "refactoring": "Refactoring",
+      "team": "Team-Projekt-Erfahrung"
+    }
+  },
+  "projects": {
+    "title": "Projekte",
+    "subtitle": "Ausgewählte Arbeiten – sauber strukturiert, responsive und praxisnah umgesetzt.",
+    "badge": {
+      "featured": "Highlight"
+    },
+    "links": {
+      "live": "Live-Demo",
+      "code": "Quellcode"
+    },
+    "items": {
+      "join": {
+        "title": "Join – Kanban / Team-App",
+        "desc": "Teamprojekt mit Aufgabenverwaltung, Login/Speicherung und gut strukturiertem Frontend."
+      },
+      "elpollo": {
+        "title": "El Pollo Loco – Jump & Run",
+        "desc": "Canvas-Spiel mit OOP-Struktur, Kollisionslogik, Statusleisten und sauberer Zustandsverwaltung."
+      },
+      "portfolio": {
+        "title": "Portfolio (Angular)",
+        "desc": "Dieses Portfolio als Standalone-Angular-App mit Routing, Sections-Layout und i18n."
+      }
+    }
+  },
+  "nav": {
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "about": "Über mich",
+    "contact": "Kontakt",
+    "privacy": "Datenschutz",
+    "imprint": "Impressum"
+  },
+  "footer": {
+    "imprint": "Impressum",
+    "privacy": "Datenschutz"
+  },
+  "about": {
+    "title": "Über mich",
+    "p1": "Ich bin Stephan Gilles und entwickle Web-Anwendungen mit Fokus auf klare Struktur, saubere UI und zuverlässige Funktionalität. Aktuell arbeite ich an Angular-Projekten und vertiefe TypeScript sowie moderne Frontend-Muster.",
+    "p2": "Mir ist wichtig, dass Code wartbar bleibt: verständliche Namen, kleine Funktionen, saubere Komponenten-Aufteilung und ein stabiler Git-Arbeitsablauf.",
+    "cta": {
+      "github": "GitHub ansehen",
+      "contact": "Kontakt"
+    },
+    "facts": {
+      "location": {
+        "label": "Standort",
+        "value": "Aachen"
+      },
+      "focus": {
+        "label": "Fokus",
+        "value": "Angular · TypeScript · UI"
+      },
+      "strengths": {
+        "label": "Stärken",
+        "value": "Struktur · Debugging · Verlässlichkeit"
+      },
+      "current": {
+        "label": "Aktuell",
+        "value": "Portfolio & Team-Projekt (Join)"
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "text": "Wenn du eine Junior-Position oder ein Projekt hast: Schreib mir gern. Ich antworte zeitnah.",
+    "actions": {
+      "write": "E-Mail schreiben",
+      "copy": "E-Mail kopieren"
+    },
+    "toast": {
+      "copied": "Kopiert ✅"
+    },
+    "links": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    },
+    "card": {
+      "title": "Kurze Info",
+      "items": {
+        "location": "Standort: Aachen",
+        "focus": "Fokus: Angular / TypeScript",
+        "projects": "Projekte: Join, El Pollo Loco"
+      }
+    }
+  },
+  "imprint": {
+    "title": "Impressum",
+    "cards": {
+      "tmc": {
+        "title": "Angaben gemäß § 5 TMG",
+        "name": "Stephan Gilles",
+        "location": "Aachen, Deutschland",
+        "emailLabel": "E-Mail"
+      },
+      "content": {
+        "title": "Haftung für Inhalte",
+        "p": "Die Inhalte dieser Webseite wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann ich jedoch keine Gewähr übernehmen."
+      },
+      "links": {
+        "title": "Haftung für Links",
+        "p": "Diese Webseite enthält ggf. Links zu externen Webseiten Dritter, auf deren Inhalte ich keinen Einfluss habe. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich."
+      }
+    }
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "cards": {
+      "general": {
+        "title": "Allgemeines",
+        "p": "Der Schutz deiner persönlichen Daten ist mir wichtig. Diese Datenschutzerklärung informiert darüber, welche Daten beim Besuch dieser Webseite verarbeitet werden."
+      },
+      "logs": {
+        "title": "Server-Logfiles",
+        "p": "Beim Aufruf dieser Webseite können durch den Hosting-Provider automatisch Informationen in sogenannten Server-Logfiles gespeichert werden (z. B. IP-Adresse, Browsertyp, Uhrzeit). Diese Daten dienen der technischen Bereitstellung und Sicherheit."
+      },
+      "contact": {
+        "title": "Kontaktaufnahme",
+        "p": "Wenn du mich per E-Mail kontaktierst, werden die von dir übermittelten Daten zur Bearbeitung deiner Anfrage verarbeitet.",
+        "contactLabel": "Kontakt"
+      },
+      "external": {
+        "title": "Externe Links",
+        "p": "Diese Webseite enthält Links zu externen Seiten (z. B. GitHub, LinkedIn). Beim Anklicken eines solchen Links gelten die Datenschutzbestimmungen des jeweiligen Anbieters."
+      }
+    }
+  },
+  "common": {
+    "profileAlt": "Profilfoto von Stephan Gilles"
+  }
+}

@@ -1,0 +1,88 @@
+name: Angular auf GitHub Pages bereitstellen
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Detect app directory (app/App)
+        id: appdir
+        shell: bash
+        run: |
+          if [ -d "app" ]; then
+            APP_DIR="app"
+          elif [ -d "App" ]; then
+            APP_DIR="App"
+          else
+            echo "ERROR: Neither 'app' nor 'App' folder exists."
+            ls -la
+            exit 1
+          fi
+
+          echo "dir=$APP_DIR" >> "$GITHUB_OUTPUT"
+          echo "Using app dir: $APP_DIR"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: |
+            app/package-lock.json
+            App/package-lock.json
+
+      - name: Install
+        working-directory: ${{ steps.appdir.outputs.dir }}
+        run: npm ci
+
+      - name: Build (production)
+        working-directory: ${{ steps.appdir.outputs.dir }}
+        run: npm run build -- --configuration production --base-href "/${{ github.event.repository.name }}/"
+
+      - name: Detect dist folder (where index.html is)
+        id: dist
+        shell: bash
+        run: |
+          set -e
+          APP_DIR="${{ steps.appdir.outputs.dir }}"
+          DIST_DIR="$(dirname "$(find "$APP_DIR/dist" -type f -name index.html -print -quit)")"
+          echo "dir=$DIST_DIR" >> "$GITHUB_OUTPUT"
+          echo "Using dist dir: $DIST_DIR"
+          ls -la "$DIST_DIR"
+
+      - name: SPA fallback (404.html -> index.html)
+        shell: bash
+        run: |
+          cp "${{ steps.dist.outputs.dir }}/index.html" "${{ steps.dist.outputs.dir }}/404.html"
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ steps.dist.outputs.dir }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

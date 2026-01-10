@@ -1,0 +1,24 @@
+<header class="header">
+  <div class="container inner">
+    <div class="brand">Stephan Gilles</div>
+
+    <nav class="nav">
+      <button type="button" class="nav-btn" (click)="goTo('skills')">{{ 'nav.skills' | t }}</button>
+      <button type="button" class="nav-btn" (click)="goTo('projects')">{{ 'nav.projects' | t }}</button>
+      <button type="button" class="nav-btn" (click)="goTo('about')">{{ 'nav.about' | t }}</button>
+      <button type="button" class="nav-btn" (click)="goTo('contact')">{{ 'nav.contact' | t }}</button>
+    </nav>
+
+    <div class="actions">
+      <button type="button" class="pill" (click)="toggleLang()">
+        {{ i18n.lang.toUpperCase() }}
+      </button>
+
+      <a class="link" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      <a class="link" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+
+      <a class="link" routerLink="/privacy">{{ 'nav.privacy' | t }}</a>
+      <a class="link" routerLink="/imprint">{{ 'nav.imprint' | t }}</a>
+    </div>
+  </div>
+</header>

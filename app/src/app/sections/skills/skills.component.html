@@ -1,0 +1,19 @@
+<section class="wrap">
+  <div class="container">
+    <div class="head">
+      <h2>{{ 'skills.title' | t }}</h2>
+      <p>{{ 'skills.subtitle' | t }}</p>
+    </div>
+
+    <div class="grid">
+      <article class="card" *ngFor="let g of groups">
+        <h3>{{ g.titleKey | t }}</h3>
+        <ul>
+          <li *ngFor="let k of g.itemKeys">
+            <span class="dot"></span> {{ k | t }}
+          </li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>

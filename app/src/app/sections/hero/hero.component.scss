@@ -1,0 +1,219 @@
+.hero {
+  /* Above-the-Fold: immer mindestens 100vh */
+  min-height: 100vh;
+  min-height: 100dvh; /* besser auf mobilen Browsern (Safari/Chrome) */
+  display: flex;
+  align-items: center;
+  /* Platz für fixed Header berücksichtigen */
+  padding: calc(var(--header-h) + 48px) 0 56px;
+
+  background:
+    radial-gradient(1200px 600px at 20% 10%, rgba(61,207,182,0.18), transparent 60%),
+    radial-gradient(900px 500px at 80% 30%, rgba(61,207,182,0.12), transparent 60%),
+    var(--bg-grad);
+
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.copy { max-width: 70ch; }
+
+.eyebrow {
+  opacity: 0.85;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 0 0 10px;
+}
+
+.title {
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 1.1;
+  margin: 0 0 12px;
+}
+
+.accent { color: #b6b9ff; }
+
+.subtitle {
+  opacity: 0.9;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.cta {
+  display: flex;
+  gap: 12px;
+  margin: 18px 0 18px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border-radius: var(--radius-lg);
+  padding: 10px 14px;
+
+  /* Checkliste: keine Standard-Border */
+  border: 1px solid rgba(255,255,255,0.12);
+  background: transparent;
+  color: #fff;
+
+  cursor: pointer;
+  font-weight: 600;
+
+  /* Checkliste: 75–125ms */
+  transition: transform 110ms ease, background 110ms ease, border-color 110ms ease;
+}
+
+.btn.primary {
+  background: rgba(61,207,182,0.18);
+}
+
+.btn.primary:hover {
+  background: rgba(255,255,255,0.20);
+  transform: translateY(-1px);
+  border-color: rgba(255,255,255,0.22);
+}
+
+.btn.ghost:hover {
+  background: rgba(255,255,255,0.08);
+  transform: translateY(-1px);
+  border-color: rgba(255,255,255,0.18);
+}
+
+.btn:focus-visible {
+  outline: 2px solid rgba(61,207,182,0.65);
+  outline-offset: 3px;
+}
+
+.highlights {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+  display: grid;
+  gap: 10px;
+  max-width: 520px;
+}
+
+.highlights li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.92;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.55);
+}
+
+.card {
+  background: rgba(61,207,182,0.10);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: var(--radius-xl);
+  padding: 18px;
+  backdrop-filter: blur(8px);
+  transition: transform 110ms ease, border-color 110ms ease, box-shadow 110ms ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,0.18);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+}
+
+.avatar {
+  height: 348px;              // kannst du so lassen
+  border-radius: 14px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;              // sorgt für Luft zum Rand
+  background: linear-gradient(135deg, rgba(255,255,255,0.10), rgba(255,255,255,0.03));
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.avatar picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  object-fit: contain;        // ✅ WICHTIG: kein Abschneiden mehr
+  object-position: center;
+}
+
+
+/* Fallback falls aspect-ratio nicht greift */
+@supports not (aspect-ratio: 1 / 1) {
+  .avatar { height: 200px; }
+}
+
+
+.meta {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: var(--radius-lg);
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.label { opacity: 0.75; }
+.value { font-weight: 600; }
+
+.links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  transition: transform 110ms ease, background 110ms ease, border-color 110ms ease;
+}
+
+.chip:hover {
+  background: rgba(61,207,182,0.18);
+  transform: translateY(-1px);
+  border-color: rgba(61,207,182,0.70);
+}
+
+.chip:focus-visible {
+  outline: 2px solid rgba(61,207,182,0.65);
+  outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+  .hero { padding: calc(var(--header-h) + 28px) 0 40px; }
+}

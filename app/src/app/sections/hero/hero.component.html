@@ -1,0 +1,65 @@
+<section class="hero">
+  <div class="container grid">
+    <div class="copy">
+      <p class="eyebrow">{{ 'hero.eyebrow' | t }}</p>
+
+      <h1 class="title">
+        {{ 'hero.title.before' | t }}
+        <span class="accent">{{ 'hero.title.name' | t }}</span>
+        {{ 'hero.title.after' | t }}
+      </h1>
+
+      <p class="subtitle">{{ 'hero.subtitle' | t }}</p>
+
+      <div class="cta">
+        <button type="button" class="btn primary" (click)="goTo('projects')">
+          {{ 'hero.cta.projects' | t }}
+        </button>
+
+        <button type="button" class="btn ghost" (click)="goTo('contact')">
+          {{ 'hero.cta.contact' | t }}
+        </button>
+      </div>
+
+      <ul class="highlights">
+        <li><span class="dot"></span> {{ 'hero.highlights.angular' | t }}</li>
+        <li><span class="dot"></span> {{ 'hero.highlights.responsive' | t }}</li>
+        <li><span class="dot"></span> {{ 'hero.highlights.git' | t }}</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="avatar">
+        <img
+          class="avatar-img"
+          src="assets/img/stephan.png"
+          [attr.alt]="('common.profileAlt' | t)"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+
+      <div class="meta">
+        <div class="meta-row">
+          <span class="label">{{ 'hero.meta.location.label' | t }}</span>
+          <span class="value">{{ 'hero.meta.location.value' | t }}</span>
+        </div>
+
+        <div class="meta-row">
+          <span class="label">{{ 'hero.meta.stack.label' | t }}</span>
+          <span class="value">{{ 'hero.meta.stack.value' | t }}</span>
+        </div>
+
+        <div class="meta-row">
+          <span class="label">{{ 'hero.meta.status.label' | t }}</span>
+          <span class="value">{{ 'hero.meta.status.value' | t }}</span>
+        </div>
+      </div>
+
+      <div class="links">
+        <a class="chip" href="https://github.com/SteGi78" target="_blank" rel="noopener">GitHub</a>
+        <a class="chip" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,75 @@
+:root{
+  /* Layout */
+  --header-h: 64px;
+  --container-w: 1248px;
+
+  /* Version 2 theme */
+  --bg: #1C1C1C;
+  --bg-grad: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
+  --accent: #3DCFB6;
+  --accent-ink: #124658;
+
+  --text: #ffffff;
+  --text-dim: rgba(255,255,255,0.85);
+
+  /* Surfaces */
+  --panel: var(--bg-grad);
+  --panel-glass: rgba(255,255,255,0.06);
+  --border: var(--accent);
+
+  /* Radius */
+  --radius-lg: 20px;
+  --radius-xl: 30px;
+}
+
+*{ box-sizing: border-box; }
+
+html, body{
+  height: 100%;
+  margin: 0;
+  color: var(--text);
+  background: var(--bg);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Subtiler globaler Gradient-Glow (Version 2 Look) */
+body::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: var(--bg-grad);
+  opacity: 0.38;
+  pointer-events: none;
+  z-index: -1;
+}
+
+a{ color: inherit; }
+
+.container{
+  max-width: var(--container-w);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.section{
+  scroll-margin-top: calc(var(--header-h) + 18px);
+  padding: 64px 0;
+}
+
+.section.alt{
+  background: rgba(255,255,255,0.03);
+}
+
+/* Utility: Version-2 Card */
+.v2-card{
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+}
+
+/* Utility: kleinere Card (Radius 20) */
+.v2-card-lg{
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
