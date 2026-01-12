@@ -47,4 +47,18 @@ export class SkillsComponent {
       ],
     },
   ];
+
+  techIcons = [
+    { icon: 'assets/icons/skills/html.png', labelKey: 'skills.icons.html' },
+    { icon: 'assets/icons/skills/css.png', labelKey: 'skills.icons.css' },
+    { icon: 'assets/icons/skills/javascript.png', labelKey: 'skills.icons.javascript' },
+    { icon: 'assets/icons/skills/typescript.png', labelKey: 'skills.icons.typescript' },
+    { icon: 'assets/icons/skills/angular.png', labelKey: 'skills.icons.angular' },
+    { icon: 'assets/icons/skills/firebase.png', labelKey: 'skills.icons.firebase' },
+    { icon: 'assets/icons/skills/git.png', labelKey: 'skills.icons.git' },
+    { icon: 'assets/icons/skills/rest-api.png', labelKey: 'skills.icons.rest' },
+    { icon: 'assets/icons/skills/scrum.png', labelKey: 'skills.icons.scrum' },
+    { icon: 'assets/icons/skills/material-design.png', labelKey: 'skills.icons.material' },
+    { icon: 'assets/icons/skills/growth-mindset.png', labelKey: 'skills.icons.growth' },
+  ];
 }

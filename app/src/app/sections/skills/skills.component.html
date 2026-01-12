@@ -5,6 +5,13 @@
       <p>{{ 'skills.subtitle' | t }}</p>
     </div>
 
+    <div class="tech-grid" aria-label="Tech stack">
+      <figure class="tech" *ngFor="let item of techIcons">
+        <img class="tech__icon" [src]="item.icon" [alt]="item.labelKey | t" loading="lazy" decoding="async" width="64" height="64" />
+        <figcaption class="tech__label">{{ item.labelKey | t }}</figcaption>
+      </figure>
+    </div>
+
     <div class="grid">
       <article class="card" *ngFor="let g of groups">
         <h3>{{ g.titleKey | t }}</h3>
