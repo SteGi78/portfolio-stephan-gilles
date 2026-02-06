@@ -30,13 +30,18 @@
 
     <div class="card">
       <div class="avatar">
-        <img
-          class="avatar-img"
-          src="assets/img/stephan.png"
-          [attr.alt]="('common.profileAlt' | t)"
-          loading="lazy"
-          decoding="async"
-        />
+        <picture>
+          <source srcset="assets/img/stephan.webp" type="image/webp" />
+          <img
+            class="avatar-img"
+            src="assets/img/stephan.png"
+            [attr.alt]="('common.profileAlt' | t)"
+            loading="lazy"
+            decoding="async"
+            width="480"
+            height="720"
+          />
+        </picture>
       </div>
 
       <div class="meta">
@@ -58,7 +63,14 @@
 
       <div class="links">
         <a class="chip" href="https://github.com/SteGi78" target="_blank" rel="noopener">GitHub</a>
-        <a class="chip" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a
+          class="chip"
+          href="https://www.linkedin.com/in/stephan-gilles/"
+          target="_blank"
+          rel="noopener"
+        >
+          LinkedIn
+        </a>
       </div>
     </div>
   </div>
