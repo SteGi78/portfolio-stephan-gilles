@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ScrollService } from '../scroll.service';
 import { I18nService } from '../i18n/i18n.service';
@@ -38,5 +38,12 @@ export class HeaderComponent {
 
   closeMenu(): void {
     this.menuOpen = false;
+  }
+
+  @HostListener('document:keydown.escape')
+  handleEscape(): void {
+    if (this.menuOpen) {
+      this.closeMenu();
+    }
   }
 }

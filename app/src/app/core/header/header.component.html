@@ -54,10 +54,12 @@
   <div
     id="mobile-menu"
     class="mobile-drawer"
-    [class.open]="menuOpen"
+    role="dialog"
+    aria-modal="true"
     [attr.aria-hidden]="!menuOpen"
+    [class.open]="menuOpen"
   >
-    <nav class="mobile-nav">
+    <nav class="mobile-nav" aria-label="Mobile Navigation">
       <button type="button" class="nav-btn" (click)="navigateTo('skills')">{{ 'nav.skills' | t }}</button>
       <button type="button" class="nav-btn" (click)="navigateTo('projects')">{{ 'nav.projects' | t }}</button>
       <button type="button" class="nav-btn" (click)="navigateTo('about')">{{ 'nav.about' | t }}</button>
