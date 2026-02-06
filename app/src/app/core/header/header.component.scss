@@ -40,6 +40,10 @@
   border-radius: var(--radius-lg);
 }
 .nav-btn:hover { background: rgba(61,207,182,0.10); }
+.nav-btn:focus-visible {
+  outline: 2px solid rgba(61,207,182,0.65);
+  outline-offset: 3px;
+}
 
 .actions {
   display: flex;
@@ -62,8 +66,95 @@
   opacity: 0.9;
 }
 .link:hover { opacity: 1; text-decoration: underline; }
+.link:focus-visible {
+  outline: 2px solid rgba(61,207,182,0.65);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+.burger {
+  display: none;
+  border: 1px solid rgba(61,207,182,0.4);
+  background: rgba(61,207,182,0.12);
+  color: #fff;
+  border-radius: 10px;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.burger-line {
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  display: block;
+}
+
+.backdrop {
+  position: fixed;
+  inset: var(--header-h) 0 0;
+  background: rgba(0,0,0,0.45);
+  border: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms ease;
+  z-index: 40;
+}
+
+.backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: var(--header-h);
+  right: 0;
+  left: 0;
+  background: rgba(28,28,28,0.98);
+  border-bottom: 1px solid rgba(61,207,182,0.25);
+  padding: 16px;
+  display: grid;
+  gap: 16px;
+  transform: translateY(-12px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 150ms ease, opacity 150ms ease;
+  z-index: 45;
+}
+
+.mobile-drawer.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-nav {
+  display: grid;
+  gap: 8px;
+}
+
+.mobile-nav .nav-btn {
+  text-align: left;
+  padding: 10px 12px;
+  background: rgba(61,207,182,0.08);
+  border: 1px solid rgba(61,207,182,0.25);
+}
+
+.mobile-links {
+  display: grid;
+  gap: 8px;
+}
+
+.desktop-only { display: inline-flex; }
 
 /* Responsive: Nav einklappen (später Burger), erstmal Wrap */
 @media (max-width: 900px) {
   .nav { display: none; } /* sauberer als kaputt-wrappen */
+  .desktop-only { display: none; }
+  .burger { display: inline-flex; }
 }
