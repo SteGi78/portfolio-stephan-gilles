@@ -40,7 +40,11 @@ export class ProjectsComponent {
       descKey: 'projects.items.elpollo.desc',
       tech: ['JavaScript', 'Canvas', 'OOP', 'HTML', 'CSS'],
       links: [
-        { labelKey: 'projects.links.live', url: '#', external: true },
+        {
+          labelKey: 'projects.links.live',
+          url: 'https://stegi78.github.io/El-Pollo-Loco-Final/',
+          external: true,
+        },
         { labelKey: 'projects.links.code', url: '#', external: true }
       ]
     },
