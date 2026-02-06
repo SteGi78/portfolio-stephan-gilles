@@ -14,11 +14,68 @@
         {{ i18n.lang.toUpperCase() }}
       </button>
 
-      <a class="link" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-      <a class="link" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="link desktop-only" href="https://github.com/SteGi78" target="_blank" rel="noopener">GitHub</a>
+      <a
+        class="link desktop-only"
+        href="https://www.linkedin.com/in/stephan-gilles/"
+        target="_blank"
+        rel="noopener"
+      >
+        LinkedIn
+      </a>
 
-      <a class="link" routerLink="/privacy">{{ 'nav.privacy' | t }}</a>
-      <a class="link" routerLink="/imprint">{{ 'nav.imprint' | t }}</a>
+      <a class="link desktop-only" routerLink="/privacy">{{ 'nav.privacy' | t }}</a>
+      <a class="link desktop-only" routerLink="/imprint">{{ 'nav.imprint' | t }}</a>
+
+      <button
+        type="button"
+        class="burger"
+        (click)="toggleMenu()"
+        aria-controls="mobile-menu"
+        [attr.aria-expanded]="menuOpen"
+        aria-label="Menü öffnen"
+      >
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="backdrop"
+    (click)="closeMenu()"
+    [class.open]="menuOpen"
+    aria-hidden="true"
+    tabindex="-1"
+  ></button>
+
+  <div
+    id="mobile-menu"
+    class="mobile-drawer"
+    [class.open]="menuOpen"
+    [attr.aria-hidden]="!menuOpen"
+  >
+    <nav class="mobile-nav">
+      <button type="button" class="nav-btn" (click)="navigateTo('skills')">{{ 'nav.skills' | t }}</button>
+      <button type="button" class="nav-btn" (click)="navigateTo('projects')">{{ 'nav.projects' | t }}</button>
+      <button type="button" class="nav-btn" (click)="navigateTo('about')">{{ 'nav.about' | t }}</button>
+      <button type="button" class="nav-btn" (click)="navigateTo('contact')">{{ 'nav.contact' | t }}</button>
+    </nav>
+
+    <div class="mobile-links">
+      <a class="link" href="https://github.com/SteGi78" target="_blank" rel="noopener">GitHub</a>
+      <a
+        class="link"
+        href="https://www.linkedin.com/in/stephan-gilles/"
+        target="_blank"
+        rel="noopener"
+      >
+        LinkedIn
+      </a>
+      <a class="link" routerLink="/privacy" (click)="closeMenu()">{{ 'nav.privacy' | t }}</a>
+      <a class="link" routerLink="/imprint" (click)="closeMenu()">{{ 'nav.imprint' | t }}</a>
     </div>
   </div>
 </header>
