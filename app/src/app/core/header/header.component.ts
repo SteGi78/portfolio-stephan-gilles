@@ -12,6 +12,8 @@ import { TPipe } from '../i18n/t.pipe';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  menuOpen = false;
+
   constructor(
     private scroll: ScrollService,
     public i18n: I18nService
@@ -21,7 +23,20 @@ export class HeaderComponent {
     this.scroll.scrollTo(id);
   }
 
+  navigateTo(id: string) {
+    this.goTo(id);
+    this.closeMenu();
+  }
+
   toggleLang(): void {
     this.i18n.toggle();
+  }
+
+  toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  closeMenu(): void {
+    this.menuOpen = false;
   }
 }
