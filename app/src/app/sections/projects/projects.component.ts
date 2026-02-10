@@ -34,10 +34,10 @@ export class ProjectsComponent {
       screenshotAlt: 'Join project preview',
       tech: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
       links: [
-        { labelKey: 'projects.links.live', url: 'https://github.com/SteGi78?tab=repositories', external: true },
-        { labelKey: 'projects.links.code', url: 'https://github.com/SteGi78?tab=repositories', external: true }
+        { labelKey: 'projects.links.live', url: 'https://github.com/SteGi78/Join', external: true },
+        { labelKey: 'projects.links.code', url: 'https://github.com/SteGi78/Join', external: true },
       ],
-      highlight: true
+      highlight: true,
     },
     {
       titleKey: 'projects.items.elpollo.title',
@@ -52,7 +52,7 @@ export class ProjectsComponent {
           external: true,
         },
         { labelKey: 'projects.links.code', url: 'https://github.com/SteGi78/El-Pollo-Loco-Final', external: true }
-      ]
+      ],
     },
     {
       titleKey: 'projects.items.pokedex.title',
@@ -71,7 +71,7 @@ export class ProjectsComponent {
           url: 'https://github.com/SteGi78/pokedex-angular',
           external: true,
         }
-      ]
+      ],
     },
     {
       titleKey: 'projects.items.portfolio.title',
@@ -86,7 +86,7 @@ export class ProjectsComponent {
           external: true,
         },
         { labelKey: 'projects.links.code', url: 'https://github.com/SteGi78/portfolio-stephan-gilles', external: true }
-      ]
-    }
+      ],
+    },
   ];
 }
