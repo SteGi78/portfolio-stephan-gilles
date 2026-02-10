@@ -5,7 +5,7 @@
 - SEO-Basics sind gesetzt (`title`, `meta description`, Open Graph, Twitter Card).
 - Fokus-Stile für Header-Interaktionen sind vorhanden (`:focus-visible` für Navigation/Links).
 - Social-Links wurden auf die konkreten Profil-URLs konsolidiert.
-- Hero-Avatar nutzt `picture` mit WebP-Fallback sowie feste `width`/`height` gegen Layout Shift.
+- Hero-Avatar nutzt ein optimiertes Profilbild mit festen `width`/`height` gegen Layout Shift.
 
 ## To-Do (priorisiert)
 
