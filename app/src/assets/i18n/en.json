@@ -90,6 +90,10 @@
       "portfolio": {
         "title": "Portfolio (Angular)",
         "desc": "This portfolio as a standalone Angular app with routing, sections layout and i18n."
+      },
+      "pokedex": {
+        "title": "Pokédex (Angular)",
+        "desc": "Angular Pokédex with PokeAPI, search, sorting, clickable evolution and modal views (Overview/Stats/Evolution)."
       }
     }
   },

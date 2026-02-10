@@ -90,6 +90,10 @@
       "portfolio": {
         "title": "Portfolio (Angular)",
         "desc": "Dieses Portfolio als Standalone-Angular-App mit Routing, Sections-Layout und i18n."
+      },
+      "pokedex": {
+        "title": "Pokédex (Angular)",
+        "desc": "Angular-Pokédex mit PokeAPI, Suche, Sortierung, klickbarer Evolution und Modal-Ansicht (Overview/Stats/Evolution)."
       }
     }
   },
