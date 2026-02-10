@@ -13,6 +13,8 @@ type ProjectCard = {
   descKey: string;
   tech: string[];
   links: ProjectLink[];
+  screenshot?: string;
+  screenshotAlt?: string;
   highlight?: boolean;
 };
 
@@ -38,6 +40,8 @@ export class ProjectsComponent {
     {
       titleKey: 'projects.items.elpollo.title',
       descKey: 'projects.items.elpollo.desc',
+      screenshot: 'https://stegi78.github.io/El-Pollo-Loco-Final/img/9_intro_outro_screens/start/startscreen_1.png',
+      screenshotAlt: 'El Pollo Loco Screenshot',
       tech: ['JavaScript', 'Canvas', 'OOP', 'HTML', 'CSS'],
       links: [
         {

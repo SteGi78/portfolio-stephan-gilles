@@ -53,6 +53,19 @@
       "components": "Component thinking",
       "refactoring": "Refactoring",
       "team": "Team project experience"
+    },
+    "icons": {
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "angular": "Angular",
+      "firebase": "Firebase",
+      "git": "Git",
+      "rest": "REST API",
+      "scrum": "Scrum",
+      "material": "Material Design",
+      "growth": "Growth Mindset"
     }
   },
   "projects": {
