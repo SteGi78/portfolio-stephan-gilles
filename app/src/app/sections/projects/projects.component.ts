@@ -30,11 +30,20 @@ export class ProjectsComponent {
     {
       titleKey: 'projects.items.join.title',
       descKey: 'projects.items.join.desc',
+      screenshot: 'https://opengraph.githubassets.com/portfolio-join/SteGi78',
+      screenshotAlt: 'Join project preview',
       tech: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
       links: [
-        // TODO: Ersetze diese Links mit deiner echten Join-Live-URL + Repo-URL, sobald Join live ist
-        { labelKey: 'projects.links.live', url: 'https://github.com/SteGi78/Join', external: true },
-        { labelKey: 'projects.links.code', url: 'https://github.com/SteGi78/Join', external: true },
+        {
+          labelKey: 'projects.links.live',
+          url: 'https://github.com/SteGi78?tab=repositories&q=join&type=source',
+          external: true,
+        },
+        {
+          labelKey: 'projects.links.code',
+          url: 'https://github.com/SteGi78?tab=repositories&q=join&type=source',
+          external: true,
+        },
       ],
       highlight: true,
     },
@@ -61,6 +70,8 @@ export class ProjectsComponent {
     {
       titleKey: 'projects.items.pokedex.title',
       descKey: 'projects.items.pokedex.desc',
+      screenshot: 'https://opengraph.githubassets.com/portfolio-pokedex/SteGi78/pokedex-angular',
+      screenshotAlt: 'Pokédex Angular project preview',
       tech: ['Angular', 'TypeScript', 'SCSS', 'PokeAPI', 'RxJS'],
       links: [
         {
@@ -78,6 +89,8 @@ export class ProjectsComponent {
     {
       titleKey: 'projects.items.portfolio.title',
       descKey: 'projects.items.portfolio.desc',
+      screenshot: 'https://stegi78.github.io/portfolio-stephan-gilles/assets/og/og-portfolio.svg',
+      screenshotAlt: 'Portfolio Angular project preview',
       tech: ['Angular', 'TypeScript', 'SCSS', 'Routing', 'i18n'],
       links: [
         {
