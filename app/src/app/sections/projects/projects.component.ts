@@ -36,12 +36,12 @@ export class ProjectsComponent {
       links: [
         {
           labelKey: 'projects.links.live',
-          url: 'https://github.com/SteGi78/Join',
+          url: 'https://github.com/SteGi78?tab=repositories&q=join&type=source',
           external: true,
         },
         {
           labelKey: 'projects.links.code',
-          url: 'https://github.com/SteGi78/Join',
+          url: 'https://github.com/SteGi78?tab=repositories&q=join&type=source',
           external: true,
         },
       ],
@@ -89,7 +89,7 @@ export class ProjectsComponent {
     {
       titleKey: 'projects.items.portfolio.title',
       descKey: 'projects.items.portfolio.desc',
-      screenshot: 'https://opengraph.githubassets.com/portfolio-site/SteGi78/portfolio-stephan-gilles',
+      screenshot: 'https://stegi78.github.io/portfolio-stephan-gilles/assets/og/og-portfolio.svg',
       screenshotAlt: 'Portfolio Angular project preview',
       tech: ['Angular', 'TypeScript', 'SCSS', 'Routing', 'i18n'],
       links: [
