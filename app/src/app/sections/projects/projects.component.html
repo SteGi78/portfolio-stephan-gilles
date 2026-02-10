@@ -14,6 +14,15 @@
 
         <p class="desc">{{ p.descKey | t }}</p>
 
+        <img
+          *ngIf="p.screenshot"
+          class="screenshot"
+          [src]="p.screenshot"
+          [alt]="p.screenshotAlt || (p.titleKey | t)"
+          loading="lazy"
+          decoding="async"
+        />
+
         <ul class="tech">
           <li *ngFor="let tech of p.tech">{{ tech }}</li>
         </ul>
