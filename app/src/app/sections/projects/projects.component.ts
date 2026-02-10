@@ -32,7 +32,7 @@ export class ProjectsComponent {
       descKey: 'projects.items.join.desc',
       tech: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
       links: [
-        { labelKey: 'projects.links.live', url: '#', external: true },
+        { labelKey: 'projects.links.live', url: 'https://github.com/SteGi78?tab=repositories', external: true },
         { labelKey: 'projects.links.code', url: 'https://github.com/SteGi78?tab=repositories', external: true }
       ],
       highlight: true
