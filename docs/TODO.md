@@ -9,9 +9,6 @@
 
 ## To-Do (priorisiert)
 
-### P0 – kritisch
-- **Merge-Konflikt in `index.html` auflösen:** Konfliktmarker (`<<<<<<<`, `=======`, `>>>>>>>`) entfernen und finalen Head-Stand konsolidieren.
-
 ### P1 – wichtig
 - **Meta-Set für Social Sharing vervollständigen:** optional `twitter:site`, `twitter:creator`, `og:locale` ergänzen.
 - **Canonicals/Robots prüfen:** `link rel="canonical"` und sinnvolle `robots`-Steuerung für GitHub-Pages-Deployment ergänzen.
