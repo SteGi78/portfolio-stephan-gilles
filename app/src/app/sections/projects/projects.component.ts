@@ -74,6 +74,11 @@ export class ProjectsComponent {
       descKey: 'projects.items.portfolio.desc',
       tech: ['Angular', 'TypeScript', 'SCSS', 'Routing', 'i18n'],
       links: [
+        {
+          labelKey: 'projects.links.live',
+          url: 'https://stegi78.github.io/portfolio-stephan-gilles/',
+          external: true,
+        },
         { labelKey: 'projects.links.code', url: '#', external: true }
       ]
     }
