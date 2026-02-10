@@ -13,6 +13,8 @@ type ProjectCard = {
   descKey: string;
   tech: string[];
   links: ProjectLink[];
+  screenshot?: string;
+  screenshotAlt?: string;
   highlight?: boolean;
 };
 
@@ -31,13 +33,15 @@ export class ProjectsComponent {
       tech: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
       links: [
         { labelKey: 'projects.links.live', url: '#', external: true },
-        { labelKey: 'projects.links.code', url: '#', external: true }
+        { labelKey: 'projects.links.code', url: 'https://github.com/SteGi78?tab=repositories', external: true }
       ],
       highlight: true
     },
     {
       titleKey: 'projects.items.elpollo.title',
       descKey: 'projects.items.elpollo.desc',
+      screenshot: 'https://stegi78.github.io/El-Pollo-Loco-Final/img/9_intro_outro_screens/start/startscreen_1.png',
+      screenshotAlt: 'El Pollo Loco Screenshot',
       tech: ['JavaScript', 'Canvas', 'OOP', 'HTML', 'CSS'],
       links: [
         {
@@ -45,7 +49,24 @@ export class ProjectsComponent {
           url: 'https://stegi78.github.io/El-Pollo-Loco-Final/',
           external: true,
         },
-        { labelKey: 'projects.links.code', url: '#', external: true }
+        { labelKey: 'projects.links.code', url: 'https://github.com/SteGi78/El-Pollo-Loco-Final', external: true }
+      ]
+    },
+    {
+      titleKey: 'projects.items.pokedex.title',
+      descKey: 'projects.items.pokedex.desc',
+      tech: ['Angular', 'TypeScript', 'SCSS', 'PokeAPI', 'RxJS'],
+      links: [
+        {
+          labelKey: 'projects.links.live',
+          url: 'https://stegi78.github.io/pokedex-angular/',
+          external: true,
+        },
+        {
+          labelKey: 'projects.links.code',
+          url: 'https://github.com/SteGi78/pokedex-angular',
+          external: true,
+        }
       ]
     },
     {
@@ -53,7 +74,12 @@ export class ProjectsComponent {
       descKey: 'projects.items.portfolio.desc',
       tech: ['Angular', 'TypeScript', 'SCSS', 'Routing', 'i18n'],
       links: [
-        { labelKey: 'projects.links.code', url: '#', external: true }
+        {
+          labelKey: 'projects.links.live',
+          url: 'https://stegi78.github.io/portfolio-stephan-gilles/',
+          external: true,
+        },
+        { labelKey: 'projects.links.code', url: 'https://github.com/SteGi78/portfolio-stephan-gilles', external: true }
       ]
     }
   ];
