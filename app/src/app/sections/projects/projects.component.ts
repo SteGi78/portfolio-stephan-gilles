@@ -30,18 +30,18 @@ export class ProjectsComponent {
     {
       titleKey: 'projects.items.join.title',
       descKey: 'projects.items.join.desc',
-      screenshot: 'https://opengraph.githubassets.com/portfolio-join/SteGi78',
+      screenshot: 'https://opengraph.githubassets.com/portfolio-join/SteGi78/join-angular',
       screenshotAlt: 'Join project preview',
-      tech: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
+      tech: ['Angular', 'TypeScript', 'SCSS', 'GitHub Pages'],
       links: [
         {
           labelKey: 'projects.links.live',
-          url: 'https://github.com/SteGi78?tab=repositories&q=join&type=source',
+          url: 'https://stegi78.github.io/join-angular/',
           external: true,
         },
         {
           labelKey: 'projects.links.code',
-          url: 'https://github.com/SteGi78?tab=repositories&q=join&type=source',
+          url: 'https://github.com/SteGi78/join-angular',
           external: true,
         },
       ],
