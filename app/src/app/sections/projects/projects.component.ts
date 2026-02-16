@@ -30,8 +30,8 @@ export class ProjectsComponent {
     {
       titleKey: 'projects.items.join.title',
       descKey: 'projects.items.join.desc',
-      screenshot: 'https://opengraph.githubassets.com/portfolio-join/SteGi78/join-angular',
-      screenshotAlt: 'Join project preview',
+      screenshot: 'assets/og/join-summary.png',
+      screenshotAlt: 'Join – Summary Dashboard (Guest view)',
       tech: ['Angular', 'TypeScript', 'SCSS', 'GitHub Pages'],
       links: [
         {
@@ -70,8 +70,8 @@ export class ProjectsComponent {
     {
       titleKey: 'projects.items.pokedex.title',
       descKey: 'projects.items.pokedex.desc',
-      screenshot: 'https://opengraph.githubassets.com/portfolio-pokedex/SteGi78/pokedex-angular',
-      screenshotAlt: 'Pokédex Angular project preview',
+      screenshot: 'assets/og/pokedex.png',
+      screenshotAlt: 'Pokédex – Overview Grid',
       tech: ['Angular', 'TypeScript', 'SCSS', 'PokeAPI', 'RxJS'],
       links: [
         {
@@ -89,7 +89,7 @@ export class ProjectsComponent {
     {
       titleKey: 'projects.items.portfolio.title',
       descKey: 'projects.items.portfolio.desc',
-      screenshot: 'https://stegi78.github.io/portfolio-stephan-gilles/assets/og/og-portfolio.svg',
+      screenshot: 'assets/og/og-portfolio.svg',
       screenshotAlt: 'Portfolio Angular project preview',
       tech: ['Angular', 'TypeScript', 'SCSS', 'Routing', 'i18n'],
       links: [
