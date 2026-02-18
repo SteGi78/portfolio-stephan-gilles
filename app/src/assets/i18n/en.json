@@ -1,12 +1,12 @@
 {
   "hero": {
-    "eyebrow": "Frontend / Fullstack (in training)",
+    "eyebrow": "Junior Frontend Developer (Angular)",
     "title": {
       "before": "Hi, I'm ",
       "name": "Stephan Gilles",
-      "after": " — I build modern web apps with Angular, TypeScript & JavaScript."
+      "after": " – I build modern web apps with Angular, TypeScript & JavaScript."
     },
-    "subtitle": "Focus: clean UI, clear structure, reliable features. Currently in a team project (Join) and on the path to fullstack.",
+    "subtitle": "Focus: clean UI, clear structure, reliable features. Experience from team projects (e.g., Join) and personal implementations – available for junior roles.",
     "cta": {
       "projects": "View projects",
       "contact": "Contact"
@@ -23,27 +23,27 @@
       },
       "stack": {
         "label": "Stack",
-        "value": "Angular · TS · JS · SCSS"
+        "value": "Angular · TypeScript · JavaScript · SCSS"
       },
       "status": {
         "label": "Status",
-        "value": "open to junior roles"
+        "value": "available for junior positions"
       }
     }
   },
   "skills": {
     "title": "Skills",
-    "subtitle": "Solid fundamentals, implemented cleanly – with a focus on maintainability.",
+    "subtitle": "Solid implementation – with a focus on maintainability, structure and clean UI.",
     "frontend": "Frontend",
     "tools": "Tools",
-    "workflow": "Workflow",
+    "workflow": "Working style",
     "items": {
       "angular": "Angular (Standalone, Routing)",
       "ts": "TypeScript",
       "js": "JavaScript (ES6+)",
       "html": "HTML5",
       "scss": "SCSS/CSS",
-      "responsive": "Responsive Design",
+      "responsive": "Responsive design",
       "git": "Git / GitHub",
       "vscode": "VS Code",
       "devtools": "Chrome DevTools",
@@ -65,35 +65,35 @@
       "rest": "REST API",
       "scrum": "Scrum",
       "material": "Material Design",
-      "growth": "Growth Mindset"
+      "growth": "Growth mindset"
     }
   },
   "projects": {
     "title": "Projects",
-    "subtitle": "Selected work — clean structure, responsive, and built with real-world practice in mind.",
+    "subtitle": "Selected work – cleanly structured, responsive and built with real-world practice in mind.",
     "badge": {
       "featured": "Featured"
     },
     "links": {
       "live": "Live demo",
-      "code": "Code"
+      "code": "Source code"
     },
     "items": {
       "join": {
-        "title": "Join — Kanban / Team App",
-        "desc": "Team project with task management, login/storage and a well-structured frontend."
+        "title": "Join – Kanban / Team App",
+        "desc": "Team project with task management, login, persistence and a clearly structured UI architecture."
       },
       "elpollo": {
-        "title": "El Pollo Loco — Jump & Run",
-        "desc": "Canvas game with OOP structure, collision handling, status bars and solid state management."
+        "title": "El Pollo Loco – Jump & Run",
+        "desc": "Canvas game with OOP structure, collision logic, status bars and stable state management."
       },
       "portfolio": {
         "title": "Portfolio (Angular)",
-        "desc": "This portfolio as a standalone Angular app with routing, sections layout and i18n."
+        "desc": "This portfolio as a standalone Angular app with routing, section-based layout and i18n."
       },
       "pokedex": {
         "title": "Pokédex (Angular)",
-        "desc": "Angular Pokédex with PokeAPI, search, sorting, clickable evolution and modal views (Overview/Stats/Evolution)."
+        "desc": "Angular Pokédex using the PokéAPI with search, sorting and a detailed view (Overview/Stats/Evolution)."
       }
     }
   },
@@ -102,17 +102,17 @@
     "projects": "Projects",
     "about": "About",
     "contact": "Contact",
-    "privacy": "Privacy",
+    "privacy": "Privacy policy",
     "imprint": "Imprint"
   },
   "footer": {
     "imprint": "Imprint",
-    "privacy": "Privacy"
+    "privacy": "Privacy policy"
   },
   "about": {
     "title": "About",
-    "p1": "I'm Stephan Gilles and I build web applications with a focus on clear structure, clean UI and reliable functionality. Currently I work on Angular projects and deepen TypeScript as well as modern frontend patterns.",
-    "p2": "What matters to me: maintainable code – clear naming, small functions, clean component structure and a stable Git workflow.",
+    "p1": "I'm Stephan Gilles and I build web applications with a focus on clear structure, clean UI and reliable functionality. My main focus is Angular, TypeScript and modern frontend patterns.",
+    "p2": "Maintainable code matters to me: meaningful naming, small functions, clean component separation and a solid Git workflow. I work in a structured way, test changes consistently in the browser and fix bugs in a traceable manner.",
     "cta": {
       "github": "View GitHub",
       "contact": "Contact"
@@ -131,16 +131,16 @@
         "value": "Structure · Debugging · Reliability"
       },
       "current": {
-        "label": "Current",
-        "value": "Portfolio & team project (Join)"
+        "label": "Currently",
+        "value": "Portfolio improvements & more Angular projects"
       }
     }
   },
   "contact": {
     "title": "Contact",
-    "text": "If you have a junior role or a project: feel free to message me. I reply promptly.",
+    "text": "If you have a junior role or a project: feel free to reach out. I'll get back to you quickly.",
     "actions": {
-      "write": "Write email",
+      "write": "Write an email",
       "copy": "Copy email"
     },
     "toast": {
@@ -151,7 +151,7 @@
       "linkedin": "LinkedIn"
     },
     "card": {
-      "title": "Short info",
+      "title": "Quick info",
       "items": {
         "location": "Location: Aachen",
         "focus": "Focus: Angular / TypeScript",
@@ -170,16 +170,16 @@
       },
       "content": {
         "title": "Liability for content",
-        "p": "The contents of this website were created with great care. However, I cannot guarantee the correctness, completeness and timeliness of the contents."
+        "p": "The contents of this website have been created with the greatest care. However, I cannot guarantee the accuracy, completeness or timeliness of the content."
       },
       "links": {
         "title": "Liability for links",
-        "p": "This website may contain links to external third-party websites. I have no influence over their contents. The respective provider or operator is always responsible for the linked pages."
+        "p": "This website may contain links to external third-party websites over whose content I have no influence. The respective provider or operator is always responsible for the content of the linked pages."
       }
     }
   },
   "privacy": {
-    "title": "Privacy Policy",
+    "title": "Privacy policy",
     "cards": {
       "general": {
         "title": "General",
@@ -187,7 +187,7 @@
       },
       "logs": {
         "title": "Server log files",
-        "p": "When accessing this website, the hosting provider may automatically store information in so-called server log files (e.g., IP address, browser type, time). This data is used for technical delivery and security."
+        "p": "When you access this website, the hosting provider may automatically store information in so-called server log files (e.g., IP address, browser type, time). This data is used for technical delivery and security."
       },
       "contact": {
         "title": "Contact",
