@@ -1,12 +1,12 @@
 {
   "hero": {
-    "eyebrow": "Frontend / Full-Stack (in Ausbildung)",
+    "eyebrow": "Junior Frontend Developer (Angular)",
     "title": {
       "before": "Hi, ich bin ",
       "name": "Stephan Gilles",
-      "after": " – ich baue moderne Web-Apps mit Angular, TypeScript & JavaScript."
+      "after": " – ich entwickle moderne Web-Apps mit Angular, TypeScript & JavaScript."
     },
-    "subtitle": "Fokus: saubere UI, klare Struktur, zuverlässige Funktionen. Aktuell im Teamprojekt (Join) und auf dem Weg zum Full-Stack.",
+    "subtitle": "Fokus: saubere UI, klare Struktur, zuverlässige Features. Erfahrung aus Teamprojekten (u. a. Join) und eigener Umsetzung – bereit für Junior-Positionen.",
     "cta": {
       "projects": "Projekte ansehen",
       "contact": "Kontakt"
@@ -14,7 +14,7 @@
     "highlights": {
       "angular": "Angular (Standalone, Routing)",
       "responsive": "HTML / SCSS / Responsive",
-      "git": "Git / GitHub Arbeitsablauf"
+      "git": "Git / GitHub Workflow"
     },
     "meta": {
       "location": {
@@ -23,7 +23,7 @@
       },
       "stack": {
         "label": "Stack",
-        "value": "Angular · TS · JS · SCSS"
+        "value": "Angular · TypeScript · JavaScript · SCSS"
       },
       "status": {
         "label": "Status",
@@ -33,7 +33,7 @@
   },
   "skills": {
     "title": "Fähigkeiten",
-    "subtitle": "Solide Grundlagen, sauber umgesetzt – mit Fokus auf Wartbarkeit.",
+    "subtitle": "Solide umgesetzt – mit Fokus auf Wartbarkeit, Struktur und saubere UI.",
     "frontend": "Frontend",
     "tools": "Tools",
     "workflow": "Arbeitsweise",
@@ -81,11 +81,11 @@
     "items": {
       "join": {
         "title": "Join – Kanban / Team-App",
-        "desc": "Teamprojekt mit Aufgabenverwaltung, Login/Speicherung und gut strukturiertem Frontend."
+        "desc": "Teamprojekt mit Aufgabenverwaltung, Login, Speicherung und klar strukturierter UI-Architektur."
       },
       "elpollo": {
         "title": "El Pollo Loco – Jump & Run",
-        "desc": "Canvas-Spiel mit OOP-Struktur, Kollisionslogik, Statusleisten und sauberer Zustandsverwaltung."
+        "desc": "Canvas-Spiel mit OOP-Struktur, Kollisionslogik, Statusleisten und stabiler Zustandsverwaltung."
       },
       "portfolio": {
         "title": "Portfolio (Angular)",
@@ -93,7 +93,7 @@
       },
       "pokedex": {
         "title": "Pokédex (Angular)",
-        "desc": "Angular-Pokédex mit PokeAPI, Suche, Sortierung, klickbarer Evolution und Modal-Ansicht (Overview/Stats/Evolution)."
+        "desc": "Angular-Pokédex mit PokeAPI, Suche, Sortierung und Detailansicht (Overview/Stats/Evolution)."
       }
     }
   },
@@ -111,8 +111,8 @@
   },
   "about": {
     "title": "Über mich",
-    "p1": "Ich bin Stephan Gilles und entwickle Web-Anwendungen mit Fokus auf klare Struktur, saubere UI und zuverlässige Funktionalität. Aktuell arbeite ich an Angular-Projekten und vertiefe TypeScript sowie moderne Frontend-Muster.",
-    "p2": "Mir ist wichtig, dass Code wartbar bleibt: verständliche Namen, kleine Funktionen, saubere Komponenten-Aufteilung und ein stabiler Git-Arbeitsablauf.",
+    "p1": "Ich bin Stephan Gilles und entwickle Web-Anwendungen mit Fokus auf klare Struktur, saubere UI und zuverlässige Funktionalität. Mein Schwerpunkt liegt auf Angular, TypeScript und modernen Frontend-Mustern.",
+    "p2": "Wichtig ist mir wartbarer Code: verständliche Benennung, kleine Funktionen, saubere Komponenten-Aufteilung und ein stabiler Git-Workflow. Ich arbeite strukturiert, teste Änderungen konsequent im Browser und behebe Bugs nachvollziehbar.",
     "cta": {
       "github": "GitHub ansehen",
       "contact": "Kontakt"
@@ -132,7 +132,7 @@
       },
       "current": {
         "label": "Aktuell",
-        "value": "Portfolio & Team-Projekt (Join)"
+        "value": "Portfolio-Ausbau & weitere Angular-Projekte"
       }
     }
   },
