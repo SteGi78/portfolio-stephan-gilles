@@ -1,0 +1,20 @@
+<div class="container projectsWrap">
+  <div class="arrow arrowTop" aria-hidden="true"></div>
+
+  <header class="sectionHeader sectionHeaderProjects">
+    <h2 class="displayTitle">{{ 'projects.title' | t }}</h2>
+    <p class="sectionLead">{{ 'projects.subtitle' | t }}</p>
+  </header>
+
+  <div class="projectList">
+    <article class="projectRow" *ngFor="let project of projects; let i = index" [class.reverse]="project.align === 'right'">
+      <div class="indexCol">
+        <span class="count">{{ project.id }}/04</span>
+      </div>
+
+      <a class="projectShot" [href]="project.liveUrl || project.codeUrl" target="_blank" rel="noopener noreferrer">
+        <img [src]="project.image" [alt]="project.titleKey | t" loading="lazy" decoding="async" />
+      </a>
+    </article>
+  </div>
+</div>

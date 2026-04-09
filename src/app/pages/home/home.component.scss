@@ -1,0 +1,19 @@
+:host {
+  display: block;
+}
+
+.heroSection {
+  padding: 0;
+}
+
+.aboutSection,
+.skillsSection,
+.projectsSection,
+.referencesSection {
+  min-height: auto;
+}
+
+.contactSection {
+  padding: 0;
+  min-height: auto;
+}

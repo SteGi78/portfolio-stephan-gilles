@@ -1,0 +1,137 @@
+
+.contactShell {
+  position: relative;
+  background: #050505;
+  color: #f7f4eb;
+  margin-top: clamp(38px, 5vw, 72px);
+  padding: clamp(92px, 12vw, 136px) 0 28px;
+  clip-path: polygon(0 8.5%, 100% 0, 100% 100%, 0 100%);
+}
+
+.contactWrap {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.9fr) minmax(0, 1fr);
+  gap: clamp(28px, 6vw, 90px);
+  align-items: start;
+}
+
+.copyCol h2 {
+  margin: 0;
+  font-family: var(--display-font);
+  font-size: clamp(3.2rem, 7vw, 5.6rem);
+  line-height: 0.9;
+  letter-spacing: -0.09em;
+}
+
+.copyCol h3 {
+  margin: 28px 0 14px;
+  color: var(--accent-bright);
+  font-size: clamp(1.55rem, 3vw, 2.4rem);
+  line-height: 1.06;
+}
+
+.copyCol p {
+  margin: 0;
+  max-width: 32ch;
+  color: rgba(247, 244, 235, 0.82);
+  line-height: 1.7;
+}
+
+.contactForm {
+  display: grid;
+  gap: 8px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid rgba(247,244,235,0.8);
+  background: transparent;
+  color: #fff;
+  padding: 0 0 12px;
+  resize: vertical;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  color: rgba(247,244,235,0.5);
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: none;
+  border-bottom-color: var(--accent-bright);
+}
+
+.check {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-top: 12px;
+  color: rgba(247,244,235,0.8);
+}
+
+.check input {
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+}
+
+.check a {
+  color: var(--accent-bright);
+  text-decoration: none;
+}
+
+.formActions {
+  margin-top: 18px;
+}
+
+.formActions button {
+  min-height: 54px;
+  min-width: 220px;
+  border: 2px solid rgba(247,244,235,0.72);
+  background: transparent;
+  color: #f7f4eb;
+  cursor: pointer;
+}
+
+.formActions button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.err {
+  min-height: 20px;
+  color: #ffb7b7;
+  font-size: 0.84rem;
+  opacity: 0;
+}
+
+.err.visible {
+  opacity: 1;
+}
+
+.submitState {
+  margin: 10px 0 0;
+}
+
+.submitState.success {
+  color: var(--accent-bright);
+}
+
+.submitState.error {
+  color: #ffb7b7;
+}
+
+.toast {
+  display: inline-block;
+  margin-top: 18px;
+  color: var(--accent-bright);
+}
+
+@media (max-width: 900px) {
+  .contactWrap {
+    grid-template-columns: 1fr;
+  }
+}

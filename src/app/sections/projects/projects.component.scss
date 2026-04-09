@@ -1,0 +1,95 @@
+
+.projectsWrap {
+  position: relative;
+}
+
+.arrowTop {
+  margin: 0 0 42px 12px;
+}
+
+.sectionHeaderProjects {
+  margin-bottom: clamp(44px, 7vw, 72px);
+}
+
+.projectList {
+  display: grid;
+  gap: clamp(46px, 8vw, 86px);
+}
+
+.projectRow {
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr);
+  gap: clamp(20px, 4vw, 48px);
+  align-items: start;
+}
+
+.projectRow.reverse {
+  grid-template-columns: minmax(0, 1fr) 140px;
+}
+
+.projectRow.reverse .indexCol {
+  order: 2;
+  justify-self: end;
+}
+
+.projectRow.reverse .projectShot {
+  order: 1;
+}
+
+.indexCol {
+  padding-top: 8px;
+}
+
+.count {
+  display: inline-block;
+  font-family: var(--display-font);
+  font-size: clamp(2.3rem, 4vw, 3.2rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.08em;
+}
+
+.projectShot {
+  display: block;
+  text-decoration: none;
+}
+
+.projectShot img {
+  display: block;
+  width: min(100%, 620px);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: rgba(0, 0, 0, 0.04);
+  filter: grayscale(1);
+}
+
+.projectShot:hover img {
+  filter: grayscale(0.35);
+}
+
+.projectRow.reverse .projectShot img {
+  margin-left: auto;
+}
+
+@media (max-width: 760px) {
+  .projectRow,
+  .projectRow.reverse {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .projectRow.reverse .indexCol,
+  .projectRow.reverse .projectShot {
+    order: initial;
+  }
+
+  .count {
+    font-size: 2.5rem;
+  }
+
+  .projectShot img,
+  .projectRow.reverse .projectShot img {
+    width: 100%;
+    margin-left: 0;
+  }
+}

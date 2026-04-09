@@ -1,0 +1,42 @@
+<header class="header">
+  <div class="container inner">
+    <a class="brand" routerLink="/" aria-label="Stephan Gilles Portfolio">
+      <span class="brandMark">[SG]</span>
+    </a>
+
+    <div class="actions">
+      <button type="button" class="lang" (click)="toggleLang()" aria-label="Sprache umschalten">
+        <span [class.active]="i18n.lang === 'en'">EN</span>
+        <span [class.active]="i18n.lang === 'de'">DE</span>
+      </button>
+      <button type="button" class="burger" (click)="toggleMenu()" aria-controls="mobile-menu" [attr.aria-expanded]="menuOpen" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <button type="button" class="backdrop" (click)="closeMenu()" [class.open]="menuOpen" aria-hidden="true" tabindex="-1"></button>
+  <aside id="mobile-menu" class="drawer" role="dialog" aria-modal="true" [attr.aria-hidden]="!menuOpen" [class.open]="menuOpen">
+    <div class="drawerHead">
+      <span class="brandMark">[SG]</span>
+      <button type="button" class="close" (click)="closeMenu()" aria-label="Menü schließen">×</button>
+    </div>
+
+    <p class="drawerIntro">Frontend Developer · Angular · TypeScript · Aachen / Remote</p>
+
+    <nav class="drawerNav" aria-label="Navigation">
+      <button type="button" class="navBtn" *ngFor="let item of navItems" (click)="navigateTo(item.id)" [class.active]="activeSection === item.id">
+        {{ item.labelKey | t }}
+      </button>
+    </nav>
+
+    <div class="drawerMeta">
+      <a href="mailto:gilles-stephan&#64;gmx.de">gilles-stephan&#64;gmx.de</a>
+      <div class="drawerLinks">
+        <a href="https://github.com/SteGi78" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/stephan-gilles/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a routerLink="/imprint" (click)="closeMenu()">{{ 'nav.imprint' | t }}</a>
+        <a routerLink="/privacy" (click)="closeMenu()">{{ 'nav.privacy' | t }}</a>
+      </div>
+    </div>
+  </aside>
+</header>

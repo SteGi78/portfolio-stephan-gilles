@@ -1,0 +1,31 @@
+<section class="heroShell">
+  <a class="mailRail" href="mailto:gilles-stephan&#64;gmx.de">gilles-stephan&#64;gmx.de</a>
+
+  <button type="button" class="scrollHint" (click)="goTo('about')" [attr.aria-label]="('hero.scroll' | t)">
+    <span class="line"></span>
+    <span class="arrowGlyph" aria-hidden="true">↓</span>
+    <span class="label">{{ 'hero.scroll' | t }}</span>
+  </button>
+
+  <div class="container heroInner">
+    <div class="heroCopy">
+      <p class="eyebrowLabel heroEyebrow">{{ 'hero.eyebrow' | t }}</p>
+
+      <h1 class="title">
+        <span>{{ 'hero.title.line1' | t }}</span>
+        <span>{{ 'hero.title.line2' | t }}</span>
+      </h1>
+
+      <div class="nameRow">
+        <span class="nameLine" aria-hidden="true"></span>
+        <strong>{{ 'hero.title.name' | t }}</strong>
+      </div>
+
+      <p class="heroIntro">{{ 'hero.subtitle' | t }}</p>
+
+      <div class="heroActions" aria-label="Primary actions">
+        <button type="button" class="outlineBtn" (click)="goTo('contact')">{{ 'hero.cta.contact' | t }}</button>
+      </div>
+    </div>
+  </div>
+</section>

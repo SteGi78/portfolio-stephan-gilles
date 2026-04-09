@@ -1,0 +1,147 @@
+.legalShell {
+  background: var(--paper);
+  padding: clamp(42px, 5vw, 64px) 0 clamp(110px, 11vw, 150px);
+}
+
+.legalContent {
+  max-width: 930px;
+}
+
+.backHome {
+  display: inline-flex;
+  margin-bottom: 18px;
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+.backHome:hover {
+  color: var(--accent);
+}
+
+.legalKicker {
+  margin: 0 0 18px;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+}
+
+.legalContent h1 {
+  margin: 0 0 44px;
+  font-family: var(--display-font);
+  font-size: clamp(3.25rem, 7vw, 6.4rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.1em;
+}
+
+.legalIntro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 24px;
+  align-items: center;
+  margin: 0 0 26px;
+  padding: 18px 0 22px;
+  border-top: 1px solid rgba(8, 8, 8, 0.08);
+  border-bottom: 1px solid rgba(8, 8, 8, 0.08);
+  color: var(--ink-muted);
+}
+
+.legalIntro p {
+  margin: 0;
+}
+
+.legalIntro a,
+.legalBlock a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.legalIntro a:hover,
+.legalBlock a:hover,
+.sectionNav a:hover {
+  text-decoration: underline;
+}
+
+.legalOverview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.overviewCard,
+.legalBlock {
+  border: 1px solid rgba(8, 8, 8, 0.08);
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.overviewCard {
+  display: grid;
+  gap: 8px;
+  padding: 18px 18px 16px;
+}
+
+.overviewCard span,
+.sectionNav a {
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.76rem;
+}
+
+.overviewCard strong {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.sectionNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.sectionNav a {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid rgba(8, 8, 8, 0.08);
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+.legalBlock {
+  margin-bottom: 18px;
+  padding: 24px 24px 22px;
+}
+
+.legalBlock:last-child {
+  margin-bottom: 0;
+}
+
+.legalBlock h2 {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-size: clamp(1.35rem, 2vw, 2rem);
+}
+
+.legalBlock p {
+  margin: 0 0 12px;
+  line-height: 1.75;
+}
+
+.legalBlock p:last-child {
+  margin-bottom: 0;
+}
+
+.legalBlock strong {
+  color: var(--ink);
+}
+
+@media (max-width: 820px) {
+  .legalOverview {
+    grid-template-columns: 1fr;
+  }
+}
