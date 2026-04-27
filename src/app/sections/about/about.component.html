@@ -1,0 +1,27 @@
+<div class="container aboutGrid">
+  <div class="copyCol">
+    <h2 class="displayTitle">{{ 'about.title' | t }}</h2>
+    <p class="leadCopy">{{ 'about.lead' | t }}</p>
+    <p class="copy">{{ 'about.p2' | t }}</p>
+
+    <ul class="bulletList">
+      <li>{{ 'about.bullets.location' | t }}</li>
+      <li>{{ 'about.bullets.current' | t }}</li>
+    </ul>
+
+    <div class="ctaRow">
+      <button type="button" class="outlineBtn" (click)="goTo('contact')">{{ 'about.cta.contact' | t }}</button>
+    </div>
+  </div>
+
+  <figure class="photoCol">
+    <img
+      src="assets/img/stephan-1365x2048.jpg"
+      [attr.alt]="('common.profileAlt' | t)"
+      loading="lazy"
+      decoding="async"
+      width="800"
+      height="1000"
+    />
+  </figure>
+</div>

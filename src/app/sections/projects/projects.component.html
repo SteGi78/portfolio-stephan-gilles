@@ -1,0 +1,39 @@
+<div class="container projectsWrap">
+  <div class="arrow arrowTop" aria-hidden="true"></div>
+
+  <header class="sectionHeader sectionHeaderProjects">
+    <h2 class="displayTitle">{{ 'projects.title' | t }}</h2>
+    <p class="sectionLead">{{ 'projects.subtitle' | t }}</p>
+  </header>
+
+  <div class="projectList">
+    <article class="projectRow" *ngFor="let project of projects; let i = index" [class.reverse]="project.align === 'right'">
+      <div class="indexCol">
+        <span class="count">{{ project.id }}/04</span>
+      </div>
+
+      <div class="projectBody">
+        <a class="projectShot" [href]="project.liveUrl || project.codeUrl" target="_blank" rel="noopener noreferrer">
+          <img [src]="project.image" [alt]="project.titleKey | t" loading="lazy" decoding="async" />
+        </a>
+
+        <div class="projectInfo">
+          <div class="projectMeta">
+            <span>{{ project.badgeKey | t }}</span>
+            <span>{{ project.statusKey | t }}</span>
+          </div>
+          <h3>{{ project.titleKey | t }}</h3>
+          <p>{{ project.subtitleKey | t }}</p>
+          <div class="projectTags" aria-label="Tech-Stack">
+            <span *ngFor="let tag of project.stackTags">{{ tag }}</span>
+          </div>
+          <div class="projectLinks">
+            <a *ngIf="project.liveUrl" [href]="project.liveUrl" target="_blank" rel="noopener noreferrer">{{ 'projects.links.live' | t }}</a>
+            <a [href]="project.codeUrl" target="_blank" rel="noopener noreferrer">{{ 'projects.links.code' | t }}</a>
+          </div>
+        </div>
+      </div>
+
+    </article>
+  </div>
+</div>

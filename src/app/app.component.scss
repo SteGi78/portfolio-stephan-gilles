@@ -1,0 +1,4 @@
+.main {
+  min-height: calc(100dvh - var(--header-h));
+  padding-top: var(--header-h);
+}

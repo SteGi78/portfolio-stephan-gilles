@@ -1,0 +1,16 @@
+<div class="container referencesWrap">
+  <header class="head">
+    <h2 class="displayTitle">{{ 'references.title' | t }}</h2>
+    <p class="sectionIntro">{{ 'references.subtitle' | t }}</p>
+  </header>
+
+  <div class="cards">
+    <article class="card" *ngFor="let card of cards">
+      <div class="quoteMark">”</div>
+      <h3>{{ (card + '.title') | t }}</h3>
+      <p class="text">{{ (card + '.text') | t }}</p>
+    </article>
+  </div>
+
+  <div class="arrow arrowBottom" aria-hidden="true"></div>
+</div>

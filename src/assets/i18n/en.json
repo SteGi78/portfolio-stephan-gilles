@@ -1,0 +1,702 @@
+{
+  "hero": {
+    "eyebrow": "Angular · TypeScript · Frontend Developer",
+    "title": {
+      "before": "Hi, I'm ",
+      "name": "Stephan Gilles",
+      "after": "– I build clear, maintainable frontends.",
+      "line1": "Frontend",
+      "line2": "Developer"
+    },
+    "subtitle": "I build structured, maintainable frontends with Angular and TypeScript. My background in technical work, manufacturing, and systematic problem solving adds precision, calm execution, and reliability to modern web projects.",
+    "proofs": {
+      "team": "Team project: JOIN",
+      "workflow": "Angular: components, routing, i18n",
+      "availability": "Available immediately · Aachen / Remote"
+    },
+    "cta": {
+      "projects": "View projects",
+      "contact": "Let’s talk"
+    },
+    "highlights": {
+      "angular": "Angular & TypeScript: components, routing, data flow",
+      "responsive": "Clean UI for desktop & mobile",
+      "git": "Git / GitHub in daily project work"
+    },
+    "meta": {
+      "location": {
+        "label": "Location",
+        "value": "Aachen"
+      },
+      "stack": {
+        "label": "Stack",
+        "value": "Angular · TypeScript · SCSS · Git"
+      },
+      "status": {
+        "label": "Status",
+        "value": "Open to junior positions"
+      },
+      "compact": "Aachen · Angular · TypeScript · Hybrid / Remote"
+    },
+    "scroll": "Scroll Down",
+    "ticker": {
+      "0": "Angular · TypeScript",
+      "1": "Maintainable frontends",
+      "2": "Clean UI flows",
+      "3": "Aachen · Hybrid / Remote"
+    },
+    "links": {
+      "github": {
+        "label": "Code",
+        "value": "GitHub profile",
+        "href": "https://github.com/SteGi78"
+      },
+      "linkedin": {
+        "label": "Network",
+        "value": "LinkedIn profile",
+        "href": "https://www.linkedin.com/in/stephan-gilles/"
+      },
+      "mail": {
+        "label": "Direct",
+        "value": "gilles-stephan@gmx.de",
+        "href": "mailto:gilles-stephan@gmx.de"
+      }
+    },
+    "opportunity": {
+      "kicker": "Best fit",
+      "title": "Ready for structured Angular teams that value clean frontends, reliable delivery, and calm collaboration.",
+      "items": {
+        "role": {
+          "label": "Role",
+          "value": "Junior Frontend Developer"
+        },
+        "type": {
+          "label": "Setup",
+          "value": "Aachen · Hybrid · Remote"
+        },
+        "start": {
+          "label": "Start",
+          "value": "Available immediately"
+        }
+      }
+    },
+    "values": {
+      "delivery": {
+        "label": "Working style",
+        "value": "Clean delivery instead of rushed output"
+      },
+      "learning": {
+        "label": "Learning curve",
+        "value": "Fast onboarding with visible progress"
+      },
+      "workflow": {
+        "label": "Team fit",
+        "value": "Calm teamwork and clear Git workflows"
+      }
+    }
+  },
+  "skills": {
+    "title": "My skills",
+    "subtitle": "Technologies and workflow",
+    "frontend": "Frontend",
+    "tools": "Tools",
+    "workflow": "Workflow",
+    "items": {
+      "angular": "Angular (standalone, routing, components)",
+      "ts": "TypeScript",
+      "js": "JavaScript (ES6+)",
+      "html": "Semantic HTML5",
+      "scss": "SCSS / Flexbox / Grid",
+      "responsive": "Responsive Design",
+      "git": "Git / GitHub",
+      "vscode": "VS Code",
+      "devtools": "Chrome DevTools",
+      "npm": "npm",
+      "rest": "REST API basics",
+      "clean": "Clean Code",
+      "components": "Component architecture",
+      "refactoring": "Refactoring",
+      "team": "Teamwork"
+    },
+    "icons": {
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "angular": "Angular",
+      "firebase": "Firebase",
+      "git": "Git",
+      "rest": "REST API",
+      "scrum": "Scrum",
+      "material": "Material Design",
+      "growth": "Growth Mindset"
+    },
+    "adapt": {
+      "title": "New requirements?",
+      "text": "I get up to speed quickly, implement cleanly, and deliver visible results early — without creating code chaos.",
+      "cta": "Let's talk"
+    },
+    "interest": {
+      "title": "Current focus",
+      "text": "I'm currently deepening my skills in testing and backend fundamentals to grow step by step toward fullstack development."
+    },
+    "note": {
+      "before": "Don’t see the skill you need?",
+      "link": "Contact me",
+      "after": "I’m always ready to learn!"
+    }
+  },
+  "projects": {
+    "title": "Portfolio",
+    "subtitle": "A selected set of projects: clearly structured, technically clean, and aligned with real frontend requirements.",
+    "badge": {
+      "featured": "Highlight",
+      "showcase": "Project"
+    },
+    "links": {
+      "live": "Live demo",
+      "code": "GitHub",
+      "details": "View project"
+    },
+    "items": {
+      "join": {
+        "title": "Join – Kanban Board",
+        "desc": "Team project for task management: clear workflows, responsibilities, and collaboration via Git/GitHub."
+      },
+      "elpollo": {
+        "title": "El Pollo Loco",
+        "desc": "Canvas game with OOP structure, states, collisions, and clearly separated responsibilities."
+      },
+      "portfolio": {
+        "title": "Angular Portfolio",
+        "desc": "This portfolio itself: built as an Angular app with routing, i18n (DE/EN), and a responsive layout."
+      },
+      "pokedex": {
+        "title": "Pokédex App",
+        "desc": "Angular app with API integration, search/filtering, and solid handling of asynchronous data."
+      },
+      "icodome": {
+        "title": "Icodome – Architecture",
+        "desc": "Concept project: structure, planning, and documentation — proof of systems thinking."
+      }
+    },
+    "sections": {
+      "software": {
+        "title": "Frontend Projects",
+        "subtitle": "Angular/TypeScript, UI, data flow."
+      },
+      "engineering": {
+        "title": "Planning & Structure",
+        "subtitle": "Systems thinking, precision, clear documentation."
+      }
+    },
+    "tabs": {
+      "academy": "Software Projects",
+      "private": "Planning & Concepts",
+      "academyTitle": "Software Projects",
+      "privateTitle": "Planning & Concepts",
+      "academyIntro": "Hands-on work from retraining and projects — focus: structure, maintainability, clean implementation.",
+      "privateIntro": "Concept work, structural planning, and clear documentation — directly transferable to complex software projects."
+    },
+    "academy": {
+      "join": {
+        "title": "JOIN – Task Manager",
+        "subtitle": "Team project: tasks, responsibilities, structured workflows.",
+        "b1": "Components built for reusability",
+        "b2": "UI, logic, and data clearly separated",
+        "b3": "Team workflow with Git / GitHub"
+      },
+      "pokedex": {
+        "title": "Pokédex (Angular)",
+        "subtitle": "API data, search/filtering, detail view.",
+        "b1": "Fetch and display REST data cleanly",
+        "b2": "Routing and data flow structured clearly",
+        "b3": "Responsive UI for desktop/mobile"
+      },
+      "elpollo": {
+        "title": "El Pollo Loco",
+        "subtitle": "JavaScript OOP: game loop, states, collisions.",
+        "b1": "Timing and states implemented cleanly",
+        "b2": "Gameplay logic clearly separated",
+        "b3": "Extendable through a clean OOP structure"
+      },
+      "portfolio": {
+        "title": "Portfolio (Angular)",
+        "subtitle": "Angular app: clearly structured, bilingual, responsive.",
+        "b1": "DE/EN controlled centrally",
+        "b2": "Structured routing",
+        "b3": "Easy to maintain and extend"
+      }
+    },
+    "private": {
+      "icodome": {
+        "title": "Icodome – Concept Planning",
+        "subtitle": "Three selected views from a preliminary concept study — analysis, structure, and visual logic.",
+        "desc": "This project shows how I break down complex requirements before implementation, validate them visually, and document them in a structured way."
+      }
+    },
+    "cards": {
+      "join": {
+        "text": "Kanban board for structured teamwork. Focus: task logic, user flow, role ownership, and a clean Git/GitHub workflow in a team setting."
+      },
+      "elpollo": {
+        "text": "OOP-based canvas game with state-driven logic, animations, collisions, and clearly separated responsibilities in the codebase."
+      },
+      "portfolio": {
+        "text": "This portfolio itself as an Angular application with bilingual structure, modular components, and presentation tailored to recruiters."
+      },
+      "pokedex": {
+        "text": "API-driven Angular app with search logic, detail views, and structured handling of asynchronous data."
+      }
+    },
+    "meta": {
+      "team": "Team project",
+      "playable": "Playable live",
+      "caseStudy": "Own case study",
+      "apiDriven": "API-driven",
+      "liveAndCode": "Live + code available",
+      "codeOnly": "Code available"
+    },
+    "labels": {
+      "stack": "Tech stack",
+      "highlights": "What this project shows"
+    },
+    "notes": {
+      "codeOnly": "Currently no live demo in the portfolio — the focus here is on Angular structure, component logic, and clean code."
+    },
+    "caseStudy": {
+      "labels": {
+        "scope": "Scope",
+        "focus": "Focus",
+        "outcome": "Outcome"
+      },
+      "join": {
+        "scope": "Angular team project with shared repository",
+        "focus": "Reusable structure and stable handoff in teamwork",
+        "outcome": "Shows teamwork, Git discipline, and stable UI structure"
+      },
+      "elpollo": {
+        "scope": "Browser game built with JavaScript classes and Canvas",
+        "focus": "Game loop, collisions, animation flow and OOP separation",
+        "outcome": "Demonstrates logic control, debugging, and clean extendability"
+      },
+      "portfolio": {
+        "scope": "Own Angular portfolio with bilingual content and routing",
+        "focus": "Presentation quality, maintainability and recruiter clarity",
+        "outcome": "Shows modular UI work and structured product thinking"
+      },
+      "pokedex": {
+        "scope": "Angular app connected to an external REST API",
+        "focus": "Data fetching, filtering and detail states",
+        "outcome": "Demonstrates clean data flow and well-scoped features"
+      }
+    },
+    "eyebrow": "Selected work",
+    "summary": {
+      "projects": "Projects",
+      "live": "Live demos",
+      "code": "Code repositories"
+    }
+  },
+  "nav": {
+    "skills": "Skills",
+    "projects": "Portfolio",
+    "about": "About me",
+    "academyImpact": "Turning Point",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "imprint": "Legal Notice",
+    "journey": "My Journey",
+    "setup": "Setup",
+    "home": "Home",
+    "references": "Work style"
+  },
+  "footer": {
+    "imprint": "Legal Notice",
+    "privacy": "Privacy Policy",
+    "role": "Frontend Developer",
+    "location": "Aachen, Germany",
+    "tagline": "Open to junior frontend roles with an Angular focus.",
+    "sections": {
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    }
+  },
+  "about": {
+    "kicker": "Profile",
+    "title": "About me",
+    "p1": "After many years in technical, industrial, and organizational roles, I deliberately moved into software development. Since November 2023, my focus has been modern frontend development with Angular, TypeScript, clean component structure, and clear UI flows.",
+    "p2": "I work analytically, calmly, and with clear intent. Instead of fast short-term fixes, I prefer solutions that are understandable, cleanly implemented, and maintainable for teams over time.",
+    "timeline": {
+      "title": "Experience & Focus",
+      "items": {
+        "0": {
+          "year": "Office",
+          "text": "Organization, process understanding, reliable execution."
+        },
+        "1": {
+          "year": "CNC",
+          "text": "Precision, troubleshooting, technical responsibility."
+        },
+        "2": {
+          "year": "Frontend",
+          "text": "Angular/TypeScript/SCSS: components, routing, UI structure."
+        },
+        "3": {
+          "year": "Today",
+          "text": "Junior Frontend Developer — ready to take responsibility in a team and develop features cleanly."
+        }
+      }
+    },
+    "cta": {
+      "work": "View projects",
+      "contact": "Let’s talk"
+    },
+    "facts": {
+      "location": {
+        "label": "Location",
+        "value": "Based in Aachen"
+      },
+      "focus": {
+        "label": "Focus",
+        "value": "Angular · TypeScript · Frontend"
+      },
+      "strengths": {
+        "label": "Strengths",
+        "value": "Structure · Precision · Reliability"
+      },
+      "current": {
+        "label": "Current",
+        "value": "Open to work remote"
+      },
+      "signature": {
+        "label": "Profile",
+        "value": "Office · CNC · Frontend"
+      }
+    },
+    "lead": "I did not come through a classic developer career path. Today that is one of my strongest advantages: I bring technical precision, discipline, and systems thinking into frontend development.",
+    "bullets": {
+      "location": "Based in Aachen — open to hybrid or remote work.",
+      "mind": "Calm, structured, solution-oriented.",
+      "hook": "Fast onboarding — visible results early.",
+      "current": "Open to work remote"
+    },
+    "values": {
+      "structure": {
+        "label": "Structure",
+        "text": "I work with clear components, traceable decisions and a clean UI architecture."
+      },
+      "ownership": {
+        "label": "Ownership",
+        "text": "I finish tasks properly, remove technical rough edges and prefer clean delivery over rushed output."
+      },
+      "communication": {
+        "label": "Collaboration",
+        "text": "Calm communication, reliable coordination and visible progress are my default in a team."
+      }
+    },
+    "signature": {
+      "label": "What you get",
+      "text": "Not a generic career switch, but a developer profile with technical maturity, discipline, and a real quality mindset for frontend work."
+    },
+    "approach": {
+      "analyse": {
+        "label": "Step 01",
+        "value": "Read requirements carefully and break them into clear UI logic"
+      },
+      "build": {
+        "label": "Step 02",
+        "value": "Build components in a structured, understandable way"
+      },
+      "polish": {
+        "label": "Step 03",
+        "value": "Polish rough edges, test properly and keep maintainability in mind"
+      }
+    }
+  },
+  "academyImpact": {
+    "kicker": "A turning point",
+    "title": "A turning point with impact",
+    "p1": "In 2023, I had to leave my job as a CNC machinist for health reasons — and I consistently made the transition into software development.",
+    "p2": "At Developer Akademie, I worked on hands-on projects and strengthened my workflow from planning and implementation to testing, documentation, and presentation.",
+    "p3": "For me, that proves one thing: I can ramp up quickly, deliver, and present technical results professionally.",
+    "p4": "I am very grateful to Developer Akademie for that."
+  },
+  "contact": {
+    "title": "Say Hi!",
+    "text": "If you are looking for a structured junior frontend developer who builds Angular projects cleanly and delivers reliably, I would be glad to hear from you.",
+    "actions": {
+      "write": "Write an email",
+      "copy": "Copy e-mail"
+    },
+    "toast": {
+      "copied": "E-mail copied."
+    },
+    "links": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    },
+    "card": {
+      "title": "At a glance",
+      "items": {
+        "location": "Aachen / Remote",
+        "focus": "Angular & TypeScript",
+        "projects": "JOIN · Pokédex · El Pollo Loco"
+      }
+    },
+    "hint": {
+      "title": "Short & direct",
+      "text": "A few lines are enough — I’ll get back to you promptly."
+    },
+    "form": {
+      "title": "Send a message",
+      "name": {
+        "label": "Your name",
+        "ph": "First and last name",
+        "err": "Please enter your name."
+      },
+      "email": {
+        "label": "Your e-mail",
+        "ph": "name@company.com",
+        "err": "Please enter a valid e-mail address."
+      },
+      "message": {
+        "label": "Your message",
+        "ph": "How can I help?",
+        "err": "Please write a short message."
+      },
+      "privacy": {
+        "before": "I have read the",
+        "link": "privacy policy",
+        "after": "and agree to the processing of my data for being contacted back."
+      },
+      "privacyErr": "Please confirm the privacy policy.",
+      "submit": "Send message",
+      "note": "The message will be sent via your default email client.",
+      "lead": "A few lines about the role, team or project are enough — I will reply directly and clearly.",
+      "alt": "Send direct e-mail",
+      "success": "Your email app was opened. If nothing happened, please use the direct email link instead.",
+      "error": "Opening the mail app did not work. Please use the direct email link instead."
+    },
+    "lead": "Want to discuss a new project?",
+    "subtitle": "Want to discuss a new project?",
+    "copy": "Write to me if you are looking for a structured junior frontend developer who builds Angular projects cleanly, communicates clearly, and delivers reliably.",
+    "status": {
+      "0": "Junior Frontend Developer",
+      "1": "Angular · TypeScript",
+      "2": "Aachen · remote possible"
+    },
+    "kicker": "Contact",
+    "expectations": {
+      "response": {
+        "label": "Response",
+        "value": "A short message is enough — I will get back to you promptly."
+      },
+      "focus": {
+        "label": "Topics",
+        "value": "Angular frontends, UI implementation, junior roles, team fit."
+      },
+      "model": {
+        "label": "Setup",
+        "value": "On-site in Aachen, hybrid or remote."
+      }
+    },
+    "responsePanel": {
+      "title": "Direct contact",
+      "items": {
+        "0": "A short message is enough — I reply promptly.",
+        "1": "Email, LinkedIn, or the direct form are all fine.",
+        "2": "Best suited for junior frontend roles, Angular teams, and structured UI projects."
+      }
+    },
+    "footnote": "Happy to receive a short role description, project context, or preferred start date."
+  },
+  "imprint": {
+    "title": "Legal Notice",
+    "cards": {
+      "tmc": {
+        "title": "Responsible for content",
+        "name": "Stephan Gilles",
+        "location": "Aachen, Germany",
+        "emailLabel": "E-mail"
+      },
+      "content": {
+        "title": "Liability for content",
+        "p": "As a service provider, I am responsible for my own content on these pages under the applicable general laws. Although the content is created with care, I do not guarantee completeness, timeliness or accuracy in every case."
+      },
+      "links": {
+        "title": "Liability for links",
+        "p": "This website contains links to external third-party websites. Their operators are solely responsible for their content. At the time of linking, no legal violations were apparent."
+      }
+    },
+    "overview": {
+      "0": {
+        "label": "Responsible",
+        "value": "Stephan Gilles"
+      },
+      "1": {
+        "label": "Location",
+        "value": "Aachen, Germany"
+      },
+      "2": {
+        "label": "Contact",
+        "value": "gilles-stephan@gmx.de"
+      }
+    },
+    "nav": {
+      "0": "Details",
+      "1": "Content",
+      "2": "Links"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "cards": {
+      "general": {
+        "title": "General information",
+        "p": "Using this website is usually possible without providing personal data. Personal data is only processed when you actively provide it to me, for example by contacting me via e-mail."
+      },
+      "logs": {
+        "title": "Server log files",
+        "p": "When you access this website, the hosting provider may automatically collect technically necessary data in server log files. This may include browser type, operating system, referrer URL, time of the request and IP address."
+      },
+      "contact": {
+        "title": "Contact requests",
+        "p": "If you contact me by e-mail, your information will only be used to process your request. It will not be shared with third parties without your explicit consent.",
+        "contactLabel": "Contact"
+      },
+      "external": {
+        "title": "External links",
+        "p": "For linked external services such as GitHub or LinkedIn, the privacy policies of the respective providers apply."
+      }
+    },
+    "overview": {
+      "0": {
+        "label": "Data processing",
+        "value": "Only when you actively get in touch"
+      },
+      "1": {
+        "label": "Hosting",
+        "value": "Technically necessary server logs possible"
+      },
+      "2": {
+        "label": "External services",
+        "value": "GitHub · LinkedIn"
+      }
+    },
+    "nav": {
+      "0": "General",
+      "1": "Logs",
+      "2": "Contact",
+      "3": "External links"
+    }
+  },
+  "common": {
+    "profileAlt": "Stephan Gilles – Frontend Developer"
+  },
+  "icodomePage": {
+    "back": "Back to overview",
+    "eyebrow": "Concept & Planning",
+    "title": "Icodome Scheid",
+    "subtitle": "Preliminary concept study — showing structure, planning, and clear visualization.",
+    "chips": [
+      "Structural planning",
+      "Systems thinking",
+      "Visualization",
+      "Project study"
+    ],
+    "overview": {
+      "title": "Key facts",
+      "bullets": [
+        "Focus: concept development & spatial logic",
+        "Year: 2020",
+        "Scope: floor plans, sections, site plan",
+        "Transfer: structural thinking for software"
+      ]
+    },
+    "documents": {
+      "title": "Documentation",
+      "note": "Planning documents as PDF — complemented by three selected project views.",
+      "open": "View PDF",
+      "download": "Download"
+    },
+    "credits": "Concept: Dipl.-Ing. (FH) Architect Thomas Hartlich · atelier kookaa · 2020.",
+    "gallery": {
+      "title": "Project views",
+      "note": "Three selected visuals from the preliminary concept phase."
+    }
+  },
+  "journey": {
+    "kicker": "My journey",
+    "title": "From office and CNC to frontend",
+    "subtitle": "Three stages that shape how I work today.",
+    "aria": "Career stages",
+    "prev": "Previous",
+    "next": "Next",
+    "slides": {
+      "past": {
+        "tag": "Foundation",
+        "title": "Office & Organization",
+        "text": "Structure in processes, clear communication, reliable execution."
+      },
+      "now": {
+        "tag": "Technical",
+        "title": "CNC & Precision",
+        "text": "Precision, troubleshooting, technical thinking — applied consistently in daily work."
+      },
+      "future": {
+        "tag": "Today",
+        "title": "Frontend Development",
+        "text": "Angular/TypeScript — my focus is on clear components, clean UI flows, and stable features in a team."
+      }
+    }
+  },
+  "setup": {
+    "kicker": "Workspace",
+    "title": "My Setup",
+    "lead": "A practical, clear, and focused environment for development, testing, and presentation.",
+    "imageAlt": "Workspace setup with ultrawide monitor and multiple devices"
+  },
+  "references": {
+    "title": "References",
+    "subtitle": "Instead of invented quotes, this section shows transparently how I work: structured, reliable, and calm under complexity.",
+    "cards": {
+      "0": {
+        "title": "Precision",
+        "role": "Work principle",
+        "text": "I prefer clean execution over noise. Code, structure and handoff should stay understandable and reproducible.",
+        "eyebrow": "Work style"
+      },
+      "1": {
+        "title": "Ownership",
+        "role": "Work principle",
+        "text": "New topics do not intimidate me. I learn systematically and take responsibility for stable, understandable results.",
+        "eyebrow": "Collaboration"
+      },
+      "2": {
+        "title": "Learning curve",
+        "role": "Work principle",
+        "text": "My transition into software development shows how quickly I can absorb complex topics and turn them into concrete projects.",
+        "eyebrow": "Growth"
+      }
+    },
+    "principlesLabel": "What you can expect in collaboration",
+    "principles": {
+      "0": "Clear communication instead of unnecessary friction.",
+      "1": "Clean handoff with understandable structure.",
+      "2": "Calm, reliable execution even under time pressure."
+    },
+    "workflowLabel": "What I stand for in projects",
+    "workflow": {
+      "0": "Clear handoffs",
+      "1": "Clean structure",
+      "2": "Calm execution"
+    },
+    "closing": {
+      "title": "No invented testimonials — but a clear working profile.",
+      "text": "I prefer showing how I think, structure, and deliver in a transparent way. That is also how my projects are built.",
+      "cta": "See project section"
+    }
+  }
+}

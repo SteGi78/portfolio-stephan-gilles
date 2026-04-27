@@ -1,0 +1,44 @@
+<section class="contactShell">
+  <div class="container contactWrap">
+    <div class="copyCol">
+      <h2>{{ 'contact.title' | t }}</h2>
+      <h3>{{ 'contact.subtitle' | t }}</h3>
+      <p>{{ 'contact.copy' | t }}</p>
+      <span class="toast" *ngIf="copied" aria-live="polite">{{ 'contact.toast.copied' | t }}</span>
+    </div>
+
+    <form class="contactForm" [formGroup]="form" (ngSubmit)="submit()" novalidate>
+      <label>
+        <input type="text" formControlName="name" [placeholder]="'contact.form.name.ph' | t" autocomplete="name" (blur)="markTouched('name')" />
+      </label>
+      <div class="err" [class.visible]="isInvalid('name')" aria-live="polite">{{ isInvalid('name') ? ('contact.form.name.err' | t) : ' ' }}</div>
+
+      <label>
+        <input type="email" formControlName="email" [placeholder]="'contact.form.email.ph' | t" autocomplete="email" inputmode="email" (blur)="markTouched('email')" />
+      </label>
+      <div class="err" [class.visible]="isInvalid('email')" aria-live="polite">{{ isInvalid('email') ? ('contact.form.email.err' | t) : ' ' }}</div>
+
+      <label>
+        <textarea rows="4" formControlName="message" [placeholder]="'contact.form.message.ph' | t" autocomplete="off" (blur)="markTouched('message')"></textarea>
+      </label>
+      <div class="err" [class.visible]="isInvalid('message')" aria-live="polite">{{ isInvalid('message') ? ('contact.form.message.err' | t) : ' ' }}</div>
+
+      <label class="check">
+        <input type="checkbox" formControlName="privacy" (blur)="markTouched('privacy')" />
+        <span>
+          {{ 'contact.form.privacy.before' | t }}
+          <a routerLink="/privacy">{{ 'contact.form.privacy.link' | t }}</a>
+          {{ 'contact.form.privacy.after' | t }}
+        </span>
+      </label>
+      <div class="err" [class.visible]="isInvalid('privacy')" aria-live="polite">{{ isInvalid('privacy') ? ('contact.form.privacyErr' | t) : ' ' }}</div>
+
+      <div class="formActions">
+        <button type="submit" [disabled]="form.invalid || form.pending">{{ 'contact.form.submit' | t }}</button>
+      </div>
+
+      <p class="submitState success" *ngIf="mailFeedback === 'success'" aria-live="polite">{{ 'contact.form.success' | t }}</p>
+      <p class="submitState error" *ngIf="mailFeedback === 'error'" aria-live="polite">{{ 'contact.form.error' | t }}</p>
+    </form>
+  </div>
+</section>
