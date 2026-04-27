@@ -4,7 +4,7 @@ import { TPipe } from '../../core/i18n/t.pipe';
 
 type ProjectCard = {
   id: string;
-  key: 'join' | 'elpollo' | 'portfolio' | 'pokedex';
+  key: 'join' | 'elpollo' | 'pokedex';
   titleKey: string;
   subtitleKey: string;
   bulletKeys: [string, string, string];
@@ -57,27 +57,13 @@ export class ProjectsComponent {
     },
     {
       id: '03',
-      key: 'portfolio',
-      titleKey: 'projects.academy.portfolio.title',
-      subtitleKey: 'projects.cards.portfolio.text',
-      bulletKeys: ['projects.academy.portfolio.b1', 'projects.academy.portfolio.b2', 'projects.academy.portfolio.b3'],
-      stackTags: ['Angular', 'i18n', 'Responsive UI'],
-      image: 'assets/og/og-portfolio.svg',
-      align: 'left',
-      liveUrl: 'https://stegi78.github.io/PortfolioGilles/',
-      codeUrl: 'https://github.com/SteGi78/PortfolioGilles',
-      badgeKey: 'projects.meta.caseStudy',
-      statusKey: 'projects.meta.liveAndCode',
-    },
-    {
-      id: '04',
       key: 'pokedex',
       titleKey: 'projects.academy.pokedex.title',
       subtitleKey: 'projects.cards.pokedex.text',
       bulletKeys: ['projects.academy.pokedex.b1', 'projects.academy.pokedex.b2', 'projects.academy.pokedex.b3'],
       stackTags: ['Angular', 'REST API', 'Data Flow'],
       image: 'assets/projects/pokedex-cover.webp',
-      align: 'right',
+      align: 'left',
       liveUrl: 'https://stegi78.github.io/pokedex-angular/',
       codeUrl: 'https://github.com/SteGi78/pokedex-angular',
       badgeKey: 'projects.meta.apiDriven',

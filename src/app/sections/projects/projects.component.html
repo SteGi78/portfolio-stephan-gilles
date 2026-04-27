@@ -9,14 +9,10 @@
   <div class="projectList">
     <article class="projectRow" *ngFor="let project of projects; let i = index" [class.reverse]="project.align === 'right'">
       <div class="indexCol">
-        <span class="count">{{ project.id }}/04</span>
+        <span class="count">{{ project.id }}/{{ projects.length < 10 ? '0' + projects.length : projects.length }}</span>
       </div>
 
       <div class="projectBody">
-        <a class="projectShot" [href]="project.liveUrl || project.codeUrl" target="_blank" rel="noopener noreferrer">
-          <img [src]="project.image" [alt]="project.titleKey | t" loading="lazy" decoding="async" />
-        </a>
-
         <div class="projectInfo">
           <div class="projectMeta">
             <span>{{ project.badgeKey | t }}</span>
@@ -32,6 +28,10 @@
             <a [href]="project.codeUrl" target="_blank" rel="noopener noreferrer">{{ 'projects.links.code' | t }}</a>
           </div>
         </div>
+
+        <a class="projectShot" [href]="project.liveUrl || project.codeUrl" target="_blank" rel="noopener noreferrer">
+          <img [src]="project.image" [alt]="project.titleKey | t" loading="lazy" decoding="async" />
+        </a>
       </div>
 
     </article>

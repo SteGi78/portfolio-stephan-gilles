@@ -41,7 +41,7 @@ export class ContactComponent {
       this.copied = true;
       window.setTimeout(() => {
         this.copied = false;
-      }, 1200);
+      }, 2200);
     } catch {
       this.copied = false;
     }
@@ -78,7 +78,7 @@ ${message}`);
       this.mailFeedback = 'success';
       window.setTimeout(() => {
         this.mailFeedback = 'idle';
-      }, 3200);
+      }, 6500);
     } catch {
       this.mailFeedback = 'error';
     }

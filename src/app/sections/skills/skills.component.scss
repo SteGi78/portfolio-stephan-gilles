@@ -109,3 +109,26 @@
   .skillNote { flex-direction: column; }
   .skillIcon { width: 68px; height: 68px; }
 }
+
+
+.skillItem:hover .skillIcon,
+.skillItem:focus-within .skillIcon {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 560px) {
+  .iconGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px 10px;
+    align-items: start;
+  }
+
+  .skillItem:last-child:nth-child(10) {
+    grid-column: 2;
+  }
+
+  .skillItem figcaption {
+    min-height: 2.4em;
+    font-size: 0.9rem;
+  }
+}

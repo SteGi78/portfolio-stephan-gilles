@@ -1,40 +1,22 @@
-<section class="legalShell">
-  <div class="container legalContent">
-    <a class="backHome" routerLink="/">← {{ 'nav.home' | t }}</a>
-    <p class="legalKicker">{{ 'footer.imprint' | t }}</p>
+<section class="legalPage">
+  <div class="container legalWrap">
+    <a class="legalBack" routerLink="/" aria-label="Zur Startseite">←</a>
+
     <h1>{{ 'imprint.title' | t }}</h1>
 
-    <div class="legalIntro">
-      <p>{{ 'imprint.cards.tmc.name' | t }}</p>
-      <p>{{ 'imprint.cards.tmc.location' | t }}</p>
-      <a [href]="'mailto:' + email">{{ email }}</a>
-    </div>
-
-    <div class="legalOverview">
-      <article class="overviewCard" *ngFor="let key of overviewKeys">
-        <span>{{ ('imprint.overview.' + key + '.label') | t }}</span>
-        <strong>{{ ('imprint.overview.' + key + '.value') | t }}</strong>
-      </article>
-    </div>
-
-    <nav class="sectionNav" aria-label="Imprint sections">
-      <a href="#tmc">{{ 'imprint.nav.0' | t }}</a>
-      <a href="#content">{{ 'imprint.nav.1' | t }}</a>
-      <a href="#links">{{ 'imprint.nav.2' | t }}</a>
-    </nav>
-
-    <section class="legalBlock" id="tmc">
+    <section class="legalTextBlock" id="tmc">
       <h2>{{ 'imprint.cards.tmc.title' | t }}</h2>
-      <p><strong>{{ 'imprint.cards.tmc.name' | t }}</strong><br />{{ 'imprint.cards.tmc.location' | t }}</p>
-      <p><strong>{{ 'imprint.cards.tmc.emailLabel' | t }}:</strong> <a [href]="'mailto:' + email">{{ email }}</a></p>
+      <p><strong>{{ 'imprint.cards.tmc.name' | t }}</strong></p>
+      <p>{{ 'imprint.cards.tmc.location' | t }}</p>
+      <p>{{ 'imprint.cards.tmc.emailLabel' | t }}: <a [href]="'mailto:' + email">{{ email }}</a></p>
     </section>
 
-    <section class="legalBlock" id="content">
+    <section class="legalTextBlock" id="content">
       <h2>{{ 'imprint.cards.content.title' | t }}</h2>
       <p>{{ 'imprint.cards.content.p' | t }}</p>
     </section>
 
-    <section class="legalBlock" id="links">
+    <section class="legalTextBlock" id="links">
       <h2>{{ 'imprint.cards.links.title' | t }}</h2>
       <p>{{ 'imprint.cards.links.p' | t }}</p>
     </section>

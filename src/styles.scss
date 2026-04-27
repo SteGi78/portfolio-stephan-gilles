@@ -226,3 +226,83 @@ a {
     width: 56px;
   }
 }
+
+
+body {
+  font-size: 16px;
+}
+
+@media (max-width: 640px) {
+  p,
+  li,
+  a,
+  button,
+  input,
+  textarea,
+  label {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile overflow hardening: prevents horizontal scrollbars on narrow screens
+   without touching navigation/click handlers. */
+html,
+body,
+app-root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+app-root {
+  display: block;
+}
+
+.container,
+.section,
+.heroShell,
+.contactShell,
+.footer {
+  max-width: 100%;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+@supports (overflow: clip) {
+  html,
+  body,
+  app-root {
+    overflow-x: clip;
+  }
+}
+
+@media (max-width: 760px) {
+  .container {
+    max-width: calc(100% - 28px);
+  }
+
+  .displayTitle,
+  .sectionLead,
+  .projectInfo,
+  .projectMeta,
+  .projectTags,
+  .projectLinks,
+  .copyCol,
+  .contactWrap,
+  .footerInner {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .projectTags span,
+  .projectLinks a,
+  .projectMeta span {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}
